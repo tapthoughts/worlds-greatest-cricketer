@@ -14,6 +14,26 @@ export default new Router({
       component: Home,
     },
     {
+      path: '/battingODI',
+      name: 'battingODI',
+      component: () => import('./views/BattingODI.vue'),
+    },
+    {
+      path: '/battingTest',
+      name: 'battingTest',
+      component: () => import('./views/BattingTest.vue'),
+    },
+    {
+      path: '/bowlingODI',
+      name: 'bowlingODI',
+      component: () => import('./views/BowlingODI.vue'),
+    },
+    {
+      path: '/bowlingTest',
+      name: 'bowlingTest',
+      component: () => import('./views/BowlingTest.vue'),
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting

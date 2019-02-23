@@ -1,34 +1,34 @@
 <template>
     <div class="side-bar">
         <el-menu
-            default-active="2"
+            default-active="1"
             class="el-menu-vertical-demo"
             @open="handleOpen"
             @close="handleClose"
             background-color="#545c64"
             text-color="#fff"
             active-text-color="#ffd04b">
-            <el-menu-item index="2">
+            <el-menu-item @click="routeHome()" index="1">
             <i class="el-icon-menu"></i>
             <span>Getting Started</span>
             </el-menu-item>
-            <el-submenu index="1">
+            <el-submenu index="2">
             <template slot="title">
                 <i class="el-icon-location"></i>
                 <span>Visualization</span>
             </template>
-            <el-menu-item-group title="Group One">
-                <el-menu-item index="1-1">ODI</el-menu-item>
-                <el-menu-item index="1-2">Test</el-menu-item>
+            <el-menu-item-group title="Batting Statistics">
+                <el-menu-item @click="routeBattingODI()" index="1-1">ODI</el-menu-item>
+                <el-menu-item @click="routeBattingTest()" index="1-2">Test</el-menu-item>
             </el-menu-item-group>
-            <el-menu-item-group title="Group Two">
-                <el-menu-item index="1-3">ODI</el-menu-item>
-                <el-menu-item index="1-4">Test</el-menu-item>
+            <el-menu-item-group title="Bowling Statistics">
+                <el-menu-item @click="routeBowlingODI()" index="1-3">ODI</el-menu-item>
+                <el-menu-item @click="routeBowlingTest()" index="1-4">Test</el-menu-item>
             </el-menu-item-group>
             </el-submenu>
-            <el-menu-item index="4">
+            <el-menu-item @click="routeAbout()" index="4">
             <i class="el-icon-setting"></i>
-            <span>Readme</span>
+            <span>About</span>
             </el-menu-item>
         </el-menu>
     </div>
@@ -42,7 +42,26 @@ export default {
       },
       handleClose(key, keyPath) {
         console.log(key, keyPath);
-      }
+      },
+      // route methods
+      routeHome() {
+          this.$router.push({ path: '/' })
+      },
+      routeBattingODI() {
+          this.$router.push({ path: 'battingODI' })
+      },
+      routeBattingTest() {
+          this.$router.push({ path: 'battingTest' })
+      },
+      routeBowlingODI() {
+          this.$router.push({ path: 'bowlingODI' })
+      },
+      routeBowlingTest() {
+          this.$router.push({ path: 'bowlingTest' })
+      },
+      routeAbout() {
+          this.$router.push({ path: 'about' })
+      },
     }
   }
 </script>
