@@ -10,7 +10,9 @@
           <Header />
         </el-header>
         <el-main>
-          <router-view/>
+          <transition name="page" mode="out-in">
+            <router-view style="margin-top: 40px"></router-view>
+          </transition>
         </el-main>
       </el-container>
     </el-container>
