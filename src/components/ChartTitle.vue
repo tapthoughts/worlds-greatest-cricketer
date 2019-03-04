@@ -12,7 +12,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .subtitle {
     color: gray;
     font-size: 15px;

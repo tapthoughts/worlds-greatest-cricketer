@@ -4,7 +4,7 @@
       <ChartTitle :title="titleText" :subTitle="subTitleText" />
     </div>
     <slot></slot>
-    <div class="bar-chart-container">
+    <div class="chart-canvas">
       <canvas ref="chart"></canvas>
     </div>
   </div>
@@ -52,8 +52,9 @@
 <style scoped>
   .title-container {
     margin-bottom: 40px;
+    margin-left: 20px;
   }
-  .bar-chart-container {
+  .chart-canvas {
     margin-left: 20px;
   }
 </style>

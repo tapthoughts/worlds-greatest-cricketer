@@ -1,0 +1,307 @@
+[
+    {
+        "player_name" : "Sachin Tendulkar",
+        "details" : {
+            "away" : {
+                "matches": 146,
+                "innings": 145,
+                "not_outs": 10,
+                "runs": 5002,
+                "highest_score": "163 v NZ",
+                "100s": 12,
+                "50s": 23,
+                "4s": 550,
+                "6s": 39,
+                "strike_rate": 81.73,
+                "catches_taken": 37,
+                "stumps_taken": 0
+            },
+            "home" : {
+                "matches": 164,
+                "innings": 160,
+                "not_outs": 15,
+                "runs": 6976,
+                "highest_score": "200* v SA",
+                "100s": 20,
+                "50s": 38,
+                "4s": 811,
+                "6s": 71,
+                "strike_rate": 88.4,
+                "catches_taken": 54,
+                "stumps_taken": 0
+            },
+            "neutral" : {
+                "matches": 153,
+                "innings": 147,
+                "not_outs": 16,
+                "runs": 6448,
+                "highest_score": "152 v NAM",
+                "100s": 17,
+                "50s": 35,
+                "4s": 655,
+                "6s": 85,
+                "strike_rate": 87.65,
+                "catches_taken": 49,
+                "stumps_taken": 0
+            },
+            "total" : {
+                "matches": 463,
+                "innings": 452,
+                "not_outs": 41,
+                "runs": 18426,
+                "highest_score": "200 v SA",
+                "100s": 49,
+                "50s": 96,
+                "4s": 2016,
+                "6s": 195,
+                "strike_rate": 85.93,
+                "catches_taken": 140,
+                "stumps_taken": 0
+            }
+        }
+    },
+    {
+        "player_name" : "Sir Viv Richards",
+        "details" : {
+            "away" : {
+                "matches": 88,
+                "innings": 82,
+                "not_outs": 13,
+                "runs": 3921,
+                "highest_score": "189* v ENG",
+                "100s": 9,
+                "50s": 27,
+                "4s": 347,
+                "6s": 70,
+                "strike_rate": 92.28,
+                "catches_taken": 40,
+                "stumps_taken": 0
+            },
+            "home" : {
+                "matches": 33,
+                "innings": 26,
+                "not_outs": 4,
+                "runs": 805,
+                "highest_score": "82 v ENG",
+                "100s": 0,
+                "50s": 7,
+                "4s": 75,
+                "6s": 17,
+                "strike_rate": 94.26,
+                "catches_taken": 27,
+                "stumps_taken": 0
+            },
+            "neutral" : {
+                "matches": 66,
+                "innings": 59,
+                "not_outs": 7,
+                "runs": 1995,
+                "highest_score": "181 v SL",
+                "100s": 2,
+                "50s": 11,
+                "4s": 178,
+                "6s": 39,
+                "strike_rate": 84.96,
+                "catches_taken": 33,
+                "stumps_taken": 0
+            },
+            "total" : {
+                "matches": 187,
+                "innings": 167,
+                "not_outs": 24,
+                "runs": 6721,
+                "highest_score": "189 v ENG",
+                "100s": 11,
+                "50s": 45,
+                "4s": 600,
+                "6s": 126,
+                "strike_rate": 90.5,
+                "catches_taken": 100,
+                "stumps_taken": 0
+            }
+        }
+    },
+    {
+        "player_name" : "Michael Bevan",
+        "details" : {
+            "away" : {
+                "matches": 80,
+                "innings": 71,
+                "not_outs": 23,
+                "runs": 2486,
+                "highest_score": "108* v ENG",
+                "100s": 3,
+                "50s": 14,
+                "4s": 180,
+                "6s": 8,
+                "strike_rate": 77.03,
+                "catches_taken": 19,
+                "stumps_taken": 0
+            },
+            "home" : {
+                "matches": 93,
+                "innings": 80,
+                "not_outs": 29,
+                "runs": 2849,
+                "highest_score": "106 v SA",
+                "100s": 2,
+                "50s": 19,
+                "4s": 165,
+                "6s": 6,
+                "strike_rate": 72.16,
+                "catches_taken": 35,
+                "stumps_taken": 0
+            },
+            "neutral" : {
+                "matches": 59,
+                "innings": 45,
+                "not_outs": 15,
+                "runs": 1577,
+                "highest_score": "101* v IND",
+                "100s": 1,
+                "50s": 13,
+                "4s": 105,
+                "6s": 7,
+                "strike_rate": 73.51,
+                "catches_taken": 15,
+                "stumps_taken": 0
+            },
+            "total" : {
+                "matches": 232,
+                "innings": 196,
+                "not_outs": 67,
+                "runs": 6912,
+                "highest_score": "108 v ENG",
+                "100s": 6,
+                "50s": 46,
+                "4s": 450,
+                "6s": 21,
+                "strike_rate": 74.23,
+                "catches_taken": 69,
+                "stumps_taken": 0
+            }
+        }
+    },
+    {
+        "player_name" : "Ricky Ponting",
+        "details" : {
+            "away" : {
+                "matches": 132,
+                "innings": 129,
+                "not_outs": 16,
+                "runs": 5090,
+                "highest_score": "164 v SA",
+                "100s": 10,
+                "50s": 32,
+                "4s": 505,
+                "6s": 65,
+                "strike_rate": 82.25,
+                "catches_taken": 51,
+                "stumps_taken": 0
+            },
+            "home" : {
+                "matches": 153,
+                "innings": 150,
+                "not_outs": 12,
+                "runs": 5406,
+                "highest_score": "134* v NZ",
+                "100s": 13,
+                "50s": 32,
+                "4s": 432,
+                "6s": 50,
+                "strike_rate": 79.36,
+                "catches_taken": 61,
+                "stumps_taken": 0
+            },
+            "neutral" : {
+                "matches": 90,
+                "innings": 86,
+                "not_outs": 11,
+                "runs": 3208,
+                "highest_score": "145 v ZIM",
+                "100s": 7,
+                "50s": 18,
+                "4s": 294,
+                "6s": 47,
+                "strike_rate": 79.28,
+                "catches_taken": 48,
+                "stumps_taken": 0
+            },
+            "total" : {
+                "matches": 375,
+                "innings": 365,
+                "not_outs": 39,
+                "runs": 13704,
+                "highest_score": "164 v SA",
+                "100s": 30,
+                "50s": 82,
+                "4s": 1231,
+                "6s": 162,
+                "strike_rate": 80.3,
+                "catches_taken": 160,
+                "stumps_taken": 0
+            }
+        }
+    },
+    {
+        "player_name" : "Brian Lara",
+        "details" : {
+            "away" : {
+                "matches": 94,
+                "innings": 93,
+                "not_outs": 8,
+                "runs": 3212,
+                "highest_score": "117 v BAN",
+                "100s": 6,
+                "50s": 21,
+                "4s": 301,
+                "6s": 35,
+                "strike_rate": 77.13,
+                "catches_taken": 38,
+                "stumps_taken": 0
+            },
+            "home" : {
+                "matches": 91,
+                "innings": 85,
+                "not_outs": 12,
+                "runs": 3224,
+                "highest_score": "146* v NZ",
+                "100s": 6,
+                "50s": 20,
+                "4s": 319,
+                "6s": 38,
+                "strike_rate": 79.05,
+                "catches_taken": 33,
+                "stumps_taken": 0
+            },
+            "neutral" : {
+                "matches": 114,
+                "innings": 111,
+                "not_outs": 12,
+                "runs": 3969,
+                "highest_score": "169 v SL",
+                "100s": 7,
+                "50s": 22,
+                "4s": 415,
+                "6s": 60,
+                "strike_rate": 81.93,
+                "catches_taken": 49,
+                "stumps_taken": 0
+            },
+            "total" : {
+                "matches": 299,
+                "innings": 289,
+                "not_outs": 32,
+                "runs": 10405,
+                "highest_score": "169 v SL",
+                "100s": 19,
+                "50s": 63,
+                "4s": 1035,
+                "6s": 133,
+                "strike_rate": 79.37,
+                "catches_taken": 120,
+                "stumps_taken": 0
+            }
+        }
+    }
+]
