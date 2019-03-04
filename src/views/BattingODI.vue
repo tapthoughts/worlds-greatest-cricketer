@@ -3,11 +3,11 @@
         <!-- <h1>Here, we get batting stats for ODI matches.</h1> -->
         <div class="card">
             <Chart
-            titleText="Top two Batsmen"
-            subTitleText="(for all seasons)"
+            titleText="Average Over Innings"
+            subTitleText="A consistent good average is what makes a player dependable"
             chartType="bar"
-            :chartData="TopBatsmanData.data"
-            :chartOptions="TopBatsmanData.options"
+            :chartData="AvgOverInngsData.data"
+            :chartOptions="AvgOverInngsData.options"
             :parentStyle="chartContainerStyle"
             />
         </div>
@@ -17,7 +17,7 @@
 <script>
 import Chart from '@/components/Chart.vue';
 
-import batting_json from '../../json/batting_ODI.json';
+import location_bat_odi from '../../json/locationbattingODI.json';
 
 export default {
     name: 'battingODI',
@@ -26,10 +26,10 @@ export default {
      return {
       chartContainerStyle: {
         margin: '20px',
-        width: '50vw',
+        width: '55vw',
         display: 'inline-block'
       },
-      TopBatsmanData: {
+      AvgOverInngsData: {
         options: {
           responsive: true,
           scales: {
@@ -41,11 +41,6 @@ export default {
               }
             }],
           }
-        //   onClick: (evt, item) => {
-        //     if (item && item[0] && item[0]._index != null) {
-        //       this.focusedBatman = batsman_json[item[0]._index];
-        //     }
-        //   }
         },
         data: {
           labels: [],
@@ -55,18 +50,18 @@ export default {
     }
   },
   mounted() {
-    const topBatsmenData = [];
-    Object.values(batting_json).forEach(team => {
-      topBatsmenData.push({
-        name: team.details.Player_Name,
-        totalRuns: team.totalRuns
+    const avgOverInngsData = [];
+    Object.values(location_bat_odi).forEach(player => {
+      avgOverInngsData.push({
+        name: player.player_name,
+        avg: player.details.total.avg
       });
     });
-    this.TopBatsmanData.data = {
-      labels: topBatsmenData.map(t => t.name),
+    this.AvgOverInngsData.data = {
+      labels: avgOverInngsData.map(t => t.name),
       datasets: [{
-        label: 'Total Runs',
-        data: topBatsmenData.map(t => t.totalRuns),
+        label: 'Average Runs',
+        data: avgOverInngsData.map(t => t.avg),
         backgroundColor: '#76D7C4'
       }]
     };

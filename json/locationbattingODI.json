@@ -12,6 +12,7 @@
                 "50s": 23,
                 "4s": 550,
                 "6s": 39,
+                "avg": 37.05,
                 "strike_rate": 81.73,
                 "catches_taken": 37,
                 "stumps_taken": 0
@@ -26,6 +27,7 @@
                 "50s": 38,
                 "4s": 811,
                 "6s": 71,
+                "avg": 48.11,
                 "strike_rate": 88.4,
                 "catches_taken": 54,
                 "stumps_taken": 0
@@ -40,6 +42,7 @@
                 "50s": 35,
                 "4s": 655,
                 "6s": 85,
+                "avg": 49.22,
                 "strike_rate": 87.65,
                 "catches_taken": 49,
                 "stumps_taken": 0
@@ -54,6 +57,7 @@
                 "50s": 96,
                 "4s": 2016,
                 "6s": 195,
+                "avg": 44.79,
                 "strike_rate": 85.93,
                 "catches_taken": 140,
                 "stumps_taken": 0
@@ -73,6 +77,7 @@
                 "50s": 27,
                 "4s": 347,
                 "6s": 70,
+                "avg": 56.82,
                 "strike_rate": 92.28,
                 "catches_taken": 40,
                 "stumps_taken": 0
@@ -87,6 +92,7 @@
                 "50s": 7,
                 "4s": 75,
                 "6s": 17,
+                "avg": 36.59,
                 "strike_rate": 94.26,
                 "catches_taken": 27,
                 "stumps_taken": 0
@@ -101,6 +107,7 @@
                 "50s": 11,
                 "4s": 178,
                 "6s": 39,
+                "avg": 38.36,
                 "strike_rate": 84.96,
                 "catches_taken": 33,
                 "stumps_taken": 0
@@ -115,6 +122,7 @@
                 "50s": 45,
                 "4s": 600,
                 "6s": 126,
+                "avg": 43.92,
                 "strike_rate": 90.5,
                 "catches_taken": 100,
                 "stumps_taken": 0
@@ -134,6 +142,7 @@
                 "50s": 14,
                 "4s": 180,
                 "6s": 8,
+                "avg": 51.79,
                 "strike_rate": 77.03,
                 "catches_taken": 19,
                 "stumps_taken": 0
@@ -148,6 +157,7 @@
                 "50s": 19,
                 "4s": 165,
                 "6s": 6,
+                "avg": 55.86,
                 "strike_rate": 72.16,
                 "catches_taken": 35,
                 "stumps_taken": 0
@@ -162,6 +172,7 @@
                 "50s": 13,
                 "4s": 105,
                 "6s": 7,
+                "avg": 52.56,
                 "strike_rate": 73.51,
                 "catches_taken": 15,
                 "stumps_taken": 0
@@ -176,6 +187,7 @@
                 "50s": 46,
                 "4s": 450,
                 "6s": 21,
+                "avg": 53.40,
                 "strike_rate": 74.23,
                 "catches_taken": 69,
                 "stumps_taken": 0
@@ -195,6 +207,7 @@
                 "50s": 32,
                 "4s": 505,
                 "6s": 65,
+                "avg": 45.04,
                 "strike_rate": 82.25,
                 "catches_taken": 51,
                 "stumps_taken": 0
@@ -209,6 +222,7 @@
                 "50s": 32,
                 "4s": 432,
                 "6s": 50,
+                "avg": 39.17,
                 "strike_rate": 79.36,
                 "catches_taken": 61,
                 "stumps_taken": 0
@@ -223,6 +237,7 @@
                 "50s": 18,
                 "4s": 294,
                 "6s": 47,
+                "avg": 42.77,
                 "strike_rate": 79.28,
                 "catches_taken": 48,
                 "stumps_taken": 0
@@ -237,6 +252,7 @@
                 "50s": 82,
                 "4s": 1231,
                 "6s": 162,
+                "avg": 42.33,
                 "strike_rate": 80.3,
                 "catches_taken": 160,
                 "stumps_taken": 0
@@ -256,6 +272,7 @@
                 "50s": 21,
                 "4s": 301,
                 "6s": 35,
+                "avg": 37.78,
                 "strike_rate": 77.13,
                 "catches_taken": 38,
                 "stumps_taken": 0
@@ -270,6 +287,7 @@
                 "50s": 20,
                 "4s": 319,
                 "6s": 38,
+                "avg": 44.16,
                 "strike_rate": 79.05,
                 "catches_taken": 33,
                 "stumps_taken": 0
@@ -284,6 +302,7 @@
                 "50s": 22,
                 "4s": 415,
                 "6s": 60,
+                "avg": 40.09,
                 "strike_rate": 81.93,
                 "catches_taken": 49,
                 "stumps_taken": 0
@@ -298,6 +317,7 @@
                 "50s": 63,
                 "4s": 1035,
                 "6s": 133,
+                "avg": 40.68,
                 "strike_rate": 79.37,
                 "catches_taken": 120,
                 "stumps_taken": 0
