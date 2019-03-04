@@ -1,0 +1,26 @@
+[
+    {
+        "details": {
+          "Player_Id": "21",
+          "Player_Name": "SK Raina",
+          "DOB": "27-Nov-86",
+          "Batting_Hand": "Left_Hand",
+          "Bowling_Skill": "Right-arm offbreak",
+          "Country": "India",
+          "Is_Umpire": "0"
+        },
+        "totalRuns": 4273
+    },
+    {
+        "details": {
+            "Player_Id": "187",
+            "Player_Name": "DA Warner",
+            "DOB": "27-Oct-86",
+            "Batting_Hand": "Left_Hand",
+            "Bowling_Skill": "Legbreak",
+            "Country": "Australia",
+            "Is_Umpire": "0"
+          },
+          "totalRuns": 3507
+    }
+]
