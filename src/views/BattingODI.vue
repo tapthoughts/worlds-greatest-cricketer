@@ -26,7 +26,7 @@ export default {
      return {
       chartContainerStyle: {
         margin: '20px',
-        width: '55vw',
+        width: '50vw',
         display: 'inline-block'
       },
       AvgOverInngsData: {
@@ -38,7 +38,11 @@ export default {
                 beginAtZero: true,
                 maxRotation: 0,
                 minRotation: 0
-              }
+              },
+              gridLines: {
+                offsetGridLines: true
+            },
+            barThickness: 50
             }],
           }
         },
@@ -60,7 +64,7 @@ export default {
     this.AvgOverInngsData.data = {
       labels: avgOverInngsData.map(t => t.name),
       datasets: [{
-        label: 'Average Runs',
+        label: 'Average Runs of all Matches',
         data: avgOverInngsData.map(t => t.avg),
         backgroundColor: '#76D7C4'
       }]
