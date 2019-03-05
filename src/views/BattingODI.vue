@@ -54,21 +54,41 @@ export default {
     }
   },
   mounted() {
+
     const avgOverInngsData = [];
+
     Object.values(location_bat_odi).forEach(player => {
       avgOverInngsData.push({
         name: player.player_name,
         avg: player.details.total.avg
       });
     });
+
+    avgOverInngsData.sort((t1, t2) => {
+      return t2.avg - t1.avg
+    });
+
     this.AvgOverInngsData.data = {
       labels: avgOverInngsData.map(t => t.name),
       datasets: [{
         label: 'Average Runs of all Matches',
         data: avgOverInngsData.map(t => t.avg),
-        backgroundColor: '#76D7C4'
+        backgroundColor: [
+          'rgb(255, 224, 230)',
+          'rgb(255, 245, 221)',
+          'rgb(219, 242, 242)',
+          'rgb(215, 236, 251)',
+          'rgb(235, 224, 255)',
+          'rgb(244, 245, 245)',
+          'rgb(255, 236, 217)'
+        ],
+        borderWidth: 1,
+        borderColor: '#777',
+        hoverBorderWidth: 2,
+        hoverBorderColor: '#333',
       }]
     };
+
   }
 };
 </script>
