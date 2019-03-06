@@ -50,6 +50,10 @@
 </script>
 
 <style scoped>
+  .chart-container {
+    width: 60%;
+    display: inline-block;
+  }
   .title-container {
     margin-bottom: 40px;
     margin-left: 20px;

@@ -10,6 +10,9 @@
             :chartOptions="AvgOverInngsData.options"
             :parentStyle="chartContainerStyle"
             />
+            <Inference
+            inference="A consistent good average is what makes a player dependable"
+            />
         </div>
 
         <div class="card">
@@ -47,6 +50,17 @@
 
         <div class="card">
             <Chart
+            titleText="Winning Contribution"
+            subTitleText="Man of the Match by number of matches played"
+            chartType="bar"
+            :chartData="MomData.data"
+            :chartOptions="MomData.options"
+            :parentStyle="chartContainerStyle"
+            />
+        </div>
+
+        <div class="card">
+            <Chart
             titleText="Strike Rate"
             subTitleText="A player who can score in any field is dependable"
             chartType="bar"
@@ -72,17 +86,21 @@
 
 <script>
 import Chart from '@/components/Chart.vue';
+import Inference from '@/components/Inference.vue';
 
 import location_bat_odi from '../../json/locationbattingODI.json';
 
 export default {
     name: 'battingODI',
-    components: { Chart },
+    components: { 
+      Chart,
+      Inference
+    },
     data() {
      return {
       chartContainerStyle: {
-        margin: '20px',
-        width: '50vw',
+        margin: '10px',
+        width: '45vw',
         display: 'inline-block'
       },
       AvgOverInngsData: {
@@ -170,6 +188,28 @@ export default {
                 stacked: true
             }]
          }
+        },
+        data: {
+          labels: [],
+          datasets: []
+        }
+      },
+      MomData: {
+        options: {
+          responsive: true,
+          scales: {
+            xAxes: [{
+              ticks: {
+                beginAtZero: true,
+                maxRotation: 0,
+                minRotation: 0
+              },
+              gridLines: {
+                offsetGridLines: true
+            },
+            barThickness: 50
+            }],
+          }
         },
         data: {
           labels: [],
@@ -351,6 +391,37 @@ export default {
           borderColor: '#777'
         }
       ]
+    };
+
+    const momData = [];
+    Object.values(location_bat_odi).forEach(player => {
+      momData.push({
+        name: player.player_name,
+        mom: player.details.total.mom
+      });
+    });
+    momData.sort((t1, t2) => {
+      return t2.mom - t1.mom
+    });
+    this.MomData.data = {
+      labels: momData.map(t => t.name),
+      datasets: [{
+        label: 'Man of Match',
+        data: momData.map(t => t.mom),
+        backgroundColor: [
+          'rgb(255, 224, 230)',
+          'rgb(255, 245, 221)',
+          'rgb(219, 242, 242)',
+          'rgb(215, 236, 251)',
+          'rgb(235, 224, 255)',
+          'rgb(244, 245, 245)',
+          'rgb(255, 236, 217)'
+        ],
+        borderWidth: 1,
+        borderColor: '#777',
+        hoverBorderWidth: 2,
+        hoverBorderColor: '#333',
+      }]
     };
 
   }

@@ -68,6 +68,7 @@ export default {
     color: #303133;
     transition: .3s;
     padding: 20px;
+    width: 95%;
 }
 
 .card:hover {
