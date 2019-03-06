@@ -202,14 +202,14 @@ export default {
       labels: conversionToCenturyData.map(t => t.name),
       datasets: [
         {
-          label: 'Fifties',
+          label: 'Half Century',
           data: conversionToCenturyData.map(t => t.fifties),
           backgroundColor: 'rgb(255, 87, 89)',
           borderWidth: 0.5,
           borderColor: '#777'
         },
         {
-          label: 'Hundreds',
+          label: 'Century',
           data: conversionToCenturyData.map(t => t.hundreds),
           backgroundColor: 'rgb(89, 161, 79)',
           borderWidth: 0.5,
@@ -223,22 +223,22 @@ export default {
       conversionToDoubleCenturyData.push({
         name: player.player_name,
         hundreds: player.details.total.hundreds,
-        fifties: player.details.total.fifties
+        doublecentury: player.details.total.doublecentury
       });
     });
     this.ConversionToDoubleCenturyData.data = {
       labels: conversionToDoubleCenturyData.map(t => t.name),
       datasets: [
         {
-          label: 'Fifties',
-          data: conversionToDoubleCenturyData.map(t => t.fifties),
+          label: 'Century',
+          data: conversionToDoubleCenturyData.map(t => t.hundreds),
           backgroundColor: 'rgb(255, 87, 89)',
           borderWidth: 0.5,
           borderColor: '#777'
         },
         {
-          label: 'Hundreds',
-          data: conversionToDoubleCenturyData.map(t => t.hundreds),
+          label: 'Double Century',
+          data: conversionToDoubleCenturyData.map(t => t.doublecentury),
           backgroundColor: 'rgb(89, 161, 79)',
           borderWidth: 0.5,
           borderColor: '#777'
