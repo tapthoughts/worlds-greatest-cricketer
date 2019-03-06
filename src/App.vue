@@ -89,6 +89,19 @@ export default {
     margin-inline-end: 0px;
 }
 
+.result-ps {
+    color: gray;
+    font-size: 15px;
+    font-weight: normal;
+    display: block;
+    margin-top: 10px;
+    margin-block-start: 0.42em;
+    margin-block-end: 0.42em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    max-width: 100%;
+}
+
 h1 {
     color: #333;
     font-size: 25px;
