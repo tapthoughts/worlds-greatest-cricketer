@@ -56,6 +56,17 @@
             />
         </div>
 
+        <div class="card">
+            <Chart
+            titleText="Number of 4's & 6's"
+            subTitleText="A player who can score in any field is dependable"
+            chartType="horizontalBar"
+            :chartData="BoundariesData.data"
+            :chartOptions="BoundariesData.options"
+            :parentStyle="chartContainerStyle"
+            />
+        </div>
+
     </div>
 </template>
 
@@ -142,6 +153,23 @@ export default {
       StrikeRateData: {
         options: {
           responsive: true
+        },
+        data: {
+          labels: [],
+          datasets: []
+        }
+      },
+      BoundariesData: {
+        options: {
+          responsive: true,
+          scales: {
+            xAxes: [{
+                stacked: true
+            }],
+            yAxes: [{
+                stacked: true
+            }]
+         }
         },
         data: {
           labels: [],
@@ -295,6 +323,34 @@ export default {
         hoverBorderWidth: 2,
         hoverBorderColor: '#333',
       }]
+    };
+
+    const boundariesData = [];
+    Object.values(location_bat_odi).forEach(player => {
+      boundariesData.push({
+        name: player.player_name,
+        fours: player.details.total.fours,
+        sixes: player.details.total.sixes
+      });
+    });
+    this.BoundariesData.data = {
+      labels: boundariesData.map(t => t.name),
+      datasets: [
+        {
+          label: 'Fours',
+          data: boundariesData.map(t => t.fours),
+          backgroundColor: 'rgb(255, 87, 89)',
+          borderWidth: 0.5,
+          borderColor: '#777'
+        },
+        {
+          label: 'Sixes',
+          data: boundariesData.map(t => t.sixes),
+          backgroundColor: 'rgb(89, 161, 79)',
+          borderWidth: 0.5,
+          borderColor: '#777'
+        }
+      ]
     };
 
   }
