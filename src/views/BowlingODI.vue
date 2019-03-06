@@ -4,8 +4,8 @@
 
 <script>
 export default {
-    name: 'bowlingODI',
-    components: {}
+  name: 'bowlingODI',
+  components: {},
 };
 </script>
 

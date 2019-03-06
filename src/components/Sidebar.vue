@@ -36,34 +36,34 @@
 
 <script>
 export default {
-    methods: {
-      handleOpen(key, keyPath) {
-        console.log(key, keyPath);
-      },
-      handleClose(key, keyPath) {
-        console.log(key, keyPath);
-      },
-      // route methods
-      routeHome() {
-          this.$router.push({ path: '/' })
-      },
-      routeBattingODI() {
-          this.$router.push({ path: 'battingODI' })
-      },
-      routeBattingTest() {
-          this.$router.push({ path: 'battingTest' })
-      },
-      routeBowlingODI() {
-          this.$router.push({ path: 'bowlingODI' })
-      },
-      routeBowlingTest() {
-          this.$router.push({ path: 'bowlingTest' })
-      },
-      routeAbout() {
-          this.$router.push({ path: 'about' })
-      },
-    }
-  }
+  methods: {
+    handleOpen(key, keyPath) {
+      console.log(key, keyPath);
+    },
+    handleClose(key, keyPath) {
+      console.log(key, keyPath);
+    },
+    // route methods
+    routeHome() {
+      this.$router.push({ path: '/' });
+    },
+    routeBattingODI() {
+      this.$router.push({ path: 'battingODI' });
+    },
+    routeBattingTest() {
+      this.$router.push({ path: 'battingTest' });
+    },
+    routeBowlingODI() {
+      this.$router.push({ path: 'bowlingODI' });
+    },
+    routeBowlingTest() {
+      this.$router.push({ path: 'bowlingTest' });
+    },
+    routeAbout() {
+      this.$router.push({ path: 'about' });
+    },
+  },
+};
 </script>
 
 <style scoped>

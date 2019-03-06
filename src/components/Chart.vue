@@ -11,42 +11,42 @@
 </template>
 
 <script>
-  import Chart from 'chart.js';
-  import ChartTitle from '@/components/ChartTitle.vue';
+import Chart from 'chart.js';
+import ChartTitle from '@/components/ChartTitle.vue';
 
-  export default {
-    name: 'Chart',
-    props: [
-      'titleText', 'subTitleText', 'chartType', 'chartData', 'chartOptions', 'parentStyle'
-    ],
-    components: { ChartTitle },
-    data() {
-      return {
-        chart: null,
-        style: this.parentStyle
+export default {
+  name: 'Chart',
+  props: [
+    'titleText', 'subTitleText', 'chartType', 'chartData', 'chartOptions', 'parentStyle',
+  ],
+  components: { ChartTitle },
+  data() {
+    return {
+      chart: null,
+      style: this.parentStyle,
+    };
+  },
+  mounted() {
+    this.chart = new Chart(this.$refs.chart.getContext('2d'), {
+      type: this.chartType,
+      data: this.chartData,
+      options: this.chartOptions,
+    });
+  },
+  watch: {
+    chartData() {
+      this.chart.data = this.chartData;
+      this.chart.options = this.chartOptions;
+      this.chart.update();
+    },
+    parentStyle(newStyle) {
+      this.style = {
+        ...this.style,
+        ...newStyle,
       };
     },
-    mounted() {
-      this.chart = new Chart(this.$refs.chart.getContext("2d"), {
-        type: this.chartType,
-        data: this.chartData,
-        options: this.chartOptions
-      });
-    },
-    watch: {
-      chartData: function() {
-        this.chart.data = this.chartData;
-        this.chart.options = this.chartOptions;
-        this.chart.update();
-      },
-      parentStyle: function(newStyle) {
-        this.style = {
-          ...this.style,
-          ...newStyle
-        };
-      }
-    }
-  }
+  },
+};
 </script>
 
 <style scoped>

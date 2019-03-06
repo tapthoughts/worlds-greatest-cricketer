@@ -8,7 +8,7 @@
 <script>
 export default {
   name: 'ChartTitle',
-  props: ['title', 'subTitle']
+  props: ['title', 'subTitle'],
 };
 </script>
 

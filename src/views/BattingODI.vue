@@ -11,7 +11,8 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Clearly, Michael Bevan rules the average turf. Sachin Tendulkar and Sir Viv Richards are nearly equal."
+            inference="Clearly, Michael Bevan rules the average turf. Sachin Tendulkar and
+                       Sir Viv Richards are nearly equal."
             winner="Michael Bevan"
             titleText="average runs scored"
             />
@@ -27,7 +28,9 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Under pressure, Sir Viv Richards outperforms every other player by a significant margin. Michael Bevan doesn’t care much, he will consistently perform as he usually does."
+            inference="Under pressure, Sir Viv Richards outperforms every other player by a
+                       significant margin. Michael Bevan doesn’t care much, he will consistently
+                       perform as he usually does."
             winner="Sir Viv Richards"
             titleText="scoring under pressure"
             />
@@ -51,18 +54,21 @@
         </div>
 
         <el-tag class="tags bottomtags"><b>Player Dominance:</b> Conversion rate of 50s into 100s, 100s into 200s & Man of the Match Awards </el-tag>
-        
+
         <div class="card">
             <Chart
             titleText="Conversion of 50s to 100s"
-            subTitleText="Let's find ability of a player to play big knocks and provide the team with the winning runs"
+            subTitleText="Let's find ability of a player to play big knocks and provide the team
+                          with the winning runs"
             chartType="horizontalBar"
             :chartData="ConversionToCenturyData.data"
             :chartOptions="ConversionToCenturyData.options"
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="It is clearly evident that Sachin Tendulkar is the player who once settled, goes for the big runs. So it is advisable to restrict him before 50 otherwise he is more likely to convert that 50 into 100."
+            inference="It is clearly evident that Sachin Tendulkar is the player who once settled,
+                       goes for the big runs. So it is advisable to restrict him before 50 otherwise
+                       he is more likely to convert that 50 into 100."
             winner="Sachin Tendulkar"
             titleText="scoring big runs"
             />
@@ -78,7 +84,9 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Only Sachin Tendulkar is the player made a double century in ODI. He is somewhat likely to convert that 100 into 200 whereas, other player don't even dream such highs."
+            inference="Only Sachin Tendulkar is the player made a double century in ODI. He is somewhat
+                       likely to convert that 100 into 200 whereas, other player don't even dream such
+                       highs."
             winner="Sachin Tendulkar"
             titleText="scoring big runs"
             />
@@ -101,7 +109,7 @@
         </div>
 
         <el-tag class="tags bottomtags"><b>Hitting Strength:</b> Strike Rate, Number of Boundaries </el-tag>
-          
+
         <div class="card">
             <Chart
             titleText="Strike Rate"
@@ -122,7 +130,8 @@
               title="Strike Rate"
               width="200"
               trigger="hover"
-              content="Batting strike rate is a measure of how frequently a batsman achieves the primary goal of batting, namely scoring runs">
+              content="Batting strike rate is a measure of how frequently a batsman achieves the primary
+                       goal of batting, namely scoring runs">
               <el-button slot="reference">Strike rate</el-button>
             </el-popover>
         </div>
@@ -137,7 +146,8 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Sachin Tendulkar likes to send the balls out of the ground, scoring most of his runs with 4's & 6's"
+            inference="Sachin Tendulkar likes to send the balls out of the ground, scoring most of his
+                       runs with 4's & 6's"
             winner="Sachin Tendulkar"
             titleText="hitting most boundaries"
             />
@@ -158,17 +168,17 @@ import Inference from '@/components/Inference.vue';
 import location_bat_odi from '../../json/locationbattingODI.json';
 
 export default {
-    name: 'battingODI',
-    components: { 
-      Chart,
-      Inference
-    },
-    data() {
-     return {
+  name: 'battingODI',
+  components: {
+    Chart,
+    Inference,
+  },
+  data() {
+    return {
       chartContainerStyle: {
         margin: '10px',
         width: '45vw',
-        display: 'inline-block'
+        display: 'inline-block',
       },
       AvgOverInngsData: {
         options: {
@@ -178,71 +188,71 @@ export default {
               ticks: {
                 beginAtZero: true,
                 maxRotation: 0,
-                minRotation: 0
+                minRotation: 0,
               },
               gridLines: {
-                offsetGridLines: true
-            },
-            barThickness: 50
-            }]
-          }
+                offsetGridLines: true,
+              },
+              barThickness: 50,
+            }],
+          },
         },
         data: {
           labels: [],
-          datasets: []
-        }
+          datasets: [],
+        },
       },
       HomeAwayScoreData: {
         options: {
-          responsive: true
+          responsive: true,
         },
         data: {
           labels: [],
-          datasets: []
-        }
+          datasets: [],
+        },
       },
       ConversionToCenturyData: {
         options: {
           responsive: true,
           scales: {
             xAxes: [{
-                stacked: true
+              stacked: true,
             }],
             yAxes: [{
-                stacked: true
-            }]
-         }
+              stacked: true,
+            }],
+          },
         },
         data: {
           labels: [],
-          datasets: []
-        }
+          datasets: [],
+        },
       },
       ConversionToDoubleCenturyData: {
         options: {
           responsive: true,
           scales: {
             xAxes: [{
-                stacked: true
+              stacked: true,
             }],
             yAxes: [{
-                stacked: true
-            }]
-         }
+              stacked: true,
+            }],
+          },
         },
         data: {
           labels: [],
-          datasets: []
-        }
+          datasets: [],
+        },
       },
       StrikeRateData: {
         options: {
-          responsive: true
+          responsive: true,
         },
         data: {
           labels: [],
-          datasets: []
-        }
+          datasets: [],
+        },
       },
       BoundariesData: {
         options: {
@@ -258,8 +268,8 @@ export default {
         },
         data: {
           labels: [],
-          datasets: []
-        }
+          datasets: [],
+        },
       },
       MomData: {
         options: {
@@ -269,34 +279,31 @@ export default {
               ticks: {
                 beginAtZero: true,
                 maxRotation: 0,
-                minRotation: 0
+                minRotation: 0,
               },
               gridLines: {
-                offsetGridLines: true
-            },
-            barThickness: 50
+                offsetGridLines: true,
+              },
+              barThickness: 50,
             }],
-          }
+          },
         },
         data: {
           labels: [],
-          datasets: []
-        }
-      }
-    }
+          datasets: [],
+        },
+      },
+    };
   },
   mounted() {
-
     const avgOverInngsData = [];
-    Object.values(location_bat_odi).forEach(player => {
+    Object.values(location_bat_odi).forEach((player) => {
       avgOverInngsData.push({
         name: player.player_name,
-        avg: player.details.total.avg
+        avg: player.details.total.avg,
       });
     });
-    avgOverInngsData.sort((t1, t2) => {
-      return t2.avg - t1.avg
-    });
+    avgOverInngsData.sort((t1, t2) => t2.avg - t1.avg);
     this.AvgOverInngsData.data = {
       labels: avgOverInngsData.map(t => t.name),
       datasets: [{
@@ -319,7 +326,7 @@ export default {
           'rgb(75, 192, 192, 1)',
           'rgb(54, 162, 235, 1)',
           'rgb(153, 102, 255, 1)',
-          'rgb(201, 203, 207, 1)'
+          'rgb(201, 203, 207, 1)',
         ],
         hoverBorderWidth: 1.2,
         hoverBorderColor: [
@@ -329,17 +336,17 @@ export default {
           'rgb(75, 192, 192, 1)',
           'rgb(54, 162, 235, 1)',
           'rgb(153, 102, 255, 1)',
-          'rgb(201, 203, 207, 1)'
-        ]
-      }]
+          'rgb(201, 203, 207, 1)',
+        ],
+      }],
     };
 
     const homeAwayScoreData = [];
-    Object.values(location_bat_odi).forEach(player => {
+    Object.values(location_bat_odi).forEach((player) => {
       homeAwayScoreData.push({
         name: player.player_name,
         awayAvg: player.details.away.avg,
-        homeAvg: player.details.home.avg
+        homeAvg: player.details.home.avg,
       });
     });
     this.HomeAwayScoreData.data = {
@@ -352,25 +359,25 @@ export default {
           borderWidth: 0.5,
           borderColor: 'rgb(255, 99, 132, 1)',
           hoverBorderWidth: 1,
-          hoverBorderColor: 'rgb(255, 99, 132, 1)'
-      },
-      {
-        label: 'Home',
-        data: homeAwayScoreData.map(t => t.homeAvg),
-        backgroundColor: 'rgb(219, 242, 242, 0.5)',
-        borderWidth: 0.5,
-        borderColor: 'rgb(75, 192, 192, 1)',
-        hoverBorderWidth: 1,
-        hoverBorderColor: 'rgb(75, 192, 192, 1)'
-      }]
+          hoverBorderColor: 'rgb(255, 99, 132, 1)',
+        },
+        {
+          label: 'Home',
+          data: homeAwayScoreData.map(t => t.homeAvg),
+          backgroundColor: 'rgb(219, 242, 242, 0.5)',
+          borderWidth: 0.5,
+          borderColor: 'rgb(75, 192, 192, 1)',
+          hoverBorderWidth: 1,
+          hoverBorderColor: 'rgb(75, 192, 192, 1)',
+        }],
     };
 
     const conversionToCenturyData = [];
-    Object.values(location_bat_odi).forEach(player => {
+    Object.values(location_bat_odi).forEach((player) => {
       conversionToCenturyData.push({
         name: player.player_name,
         hundreds: player.details.total.hundreds,
-        fifties: player.details.total.fifties
+        fifties: player.details.total.fifties,
       });
     });
     this.ConversionToCenturyData.data = {
@@ -383,7 +390,7 @@ export default {
           borderWidth: 0.5,
           borderColor: 'rgb(255, 99, 132, 1)',
           hoverBorderWidth: 1,
-          hoverBorderColor: 'rgb(255, 99, 132, 1)'
+          hoverBorderColor: 'rgb(255, 99, 132, 1)',
         },
         {
           label: 'Century',
@@ -392,17 +399,17 @@ export default {
           borderWidth: 0.5,
           borderColor: 'rgb(75, 192, 192, 1)',
           hoverBorderWidth: 1,
-          hoverBorderColor: 'rgb(75, 192, 192, 1)'
-        }
-      ]
+          hoverBorderColor: 'rgb(75, 192, 192, 1)',
+        },
+      ],
     };
 
     const conversionToDoubleCenturyData = [];
-    Object.values(location_bat_odi).forEach(player => {
+    Object.values(location_bat_odi).forEach((player) => {
       conversionToDoubleCenturyData.push({
         name: player.player_name,
         hundreds: player.details.total.hundreds,
-        doublecentury: player.details.total.doublecentury
+        doublecentury: player.details.total.doublecentury,
       });
     });
     this.ConversionToDoubleCenturyData.data = {
@@ -415,7 +422,7 @@ export default {
           borderWidth: 0.5,
           borderColor: 'rgb(255, 159, 64, 1)',
           hoverBorderWidth: 1,
-          hoverBorderColor: 'rgb(255, 159, 64, 1)'
+          hoverBorderColor: 'rgb(255, 159, 64, 1)',
         },
         {
           label: 'Double Century',
@@ -424,21 +431,19 @@ export default {
           borderWidth: 0.5,
           borderColor: 'rgb(54, 162, 235, 1)',
           hoverBorderWidth: 1,
-          hoverBorderColor: 'rgb(54, 162, 235, 1)'
-        }
-      ]
+          hoverBorderColor: 'rgb(54, 162, 235, 1)',
+        },
+      ],
     };
 
     const strikeRateData = [];
-    Object.values(location_bat_odi).forEach(player => {
+    Object.values(location_bat_odi).forEach((player) => {
       strikeRateData.push({
         name: player.player_name,
-        strike_rate: player.details.total.strike_rate
+        strike_rate: player.details.total.strike_rate,
       });
     });
-    strikeRateData.sort((t1, t2) => {
-      return t2.strike_rate - t1.strike_rate
-    });
+    strikeRateData.sort((t1, t2) => t2.strike_rate - t1.strike_rate);
     this.StrikeRateData.data = {
       labels: strikeRateData.map(t => t.name),
       datasets: [{
@@ -461,7 +466,7 @@ export default {
           'rgb(255, 99, 132, 1)',
           'rgb(255, 159, 64, 1)',
           'rgb(255, 205, 86, 1)',
-          'rgb(201, 203, 207, 1)'
+          'rgb(201, 203, 207, 1)',
         ],
         hoverBorderWidth: 1.2,
         hoverBorderColor: [
@@ -471,17 +476,17 @@ export default {
           'rgb(255, 99, 132, 1)',
           'rgb(255, 159, 64, 1)',
           'rgb(255, 205, 86, 1)',
-          'rgb(201, 203, 207, 1)'
-        ]
-      }]
+          'rgb(201, 203, 207, 1)',
+        ],
+      }],
     };
 
     const boundariesData = [];
-    Object.values(location_bat_odi).forEach(player => {
+    Object.values(location_bat_odi).forEach((player) => {
       boundariesData.push({
         name: player.player_name,
         fours: player.details.total.fours,
-        sixes: player.details.total.sixes
+        sixes: player.details.total.sixes,
       });
     });
     this.BoundariesData.data = {
@@ -494,7 +499,7 @@ export default {
           borderWidth: 0.5,
           borderColor: 'rgb(255, 159, 64, 1)',
           hoverBorderWidth: 1,
-          hoverBorderColor: 'rgb(255, 159, 64, 1)'
+          hoverBorderColor: 'rgb(255, 159, 64, 1)',
         },
         {
           label: 'Sixes',
@@ -503,21 +508,19 @@ export default {
           borderWidth: 0.5,
           borderColor: 'rgb(54, 162, 235, 1)',
           hoverBorderWidth: 1,
-          hoverBorderColor: 'rgb(54, 162, 235, 1)'
-        }
-      ]
+          hoverBorderColor: 'rgb(54, 162, 235, 1)',
+        },
+      ],
     };
 
     const momData = [];
-    Object.values(location_bat_odi).forEach(player => {
+    Object.values(location_bat_odi).forEach((player) => {
       momData.push({
         name: player.player_name,
-        mom: player.details.total.mom
+        mom: player.details.total.mom,
       });
     });
-    momData.sort((t1, t2) => {
-      return t2.mom - t1.mom
-    });
+    momData.sort((t1, t2) => t2.mom - t1.mom);
     this.MomData.data = {
       labels: momData.map(t => t.name),
       datasets: [{
@@ -540,7 +543,7 @@ export default {
           'rgb(255, 205, 86, 1)',
           'rgb(75, 192, 192, 1)',
           'rgb(153, 102, 255, 1)',
-          'rgb(201, 203, 207, 1)'
+          'rgb(201, 203, 207, 1)',
         ],
         hoverBorderWidth: 1.2,
         hoverBorderColor: [
@@ -550,12 +553,11 @@ export default {
           'rgb(255, 205, 86, 1)',
           'rgb(75, 192, 192, 1)',
           'rgb(153, 102, 255, 1)',
-          'rgb(201, 203, 207, 1)'
-        ]
-      }]
+          'rgb(201, 203, 207, 1)',
+        ],
+      }],
     };
-
-  }
+  },
 };
 </script>
 

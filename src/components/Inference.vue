@@ -9,7 +9,7 @@
 <script>
 export default {
   name: 'Inference',
-  props: ['inference', 'winner', 'titleText']
+  props: ['inference', 'winner', 'titleText'],
 };
 </script>
 
