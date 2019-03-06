@@ -27,7 +27,7 @@
             </el-menu-item-group>
             </el-submenu>
             <el-menu-item @click="routeAbout()" index="4">
-            <i class="el-icon-setting"></i>
+            <i class="el-icon-tickets"></i>
             <span>About</span>
             </el-menu-item>
         </el-menu>
