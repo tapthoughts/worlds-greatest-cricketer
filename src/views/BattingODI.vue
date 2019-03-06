@@ -45,6 +45,17 @@
             />
         </div>
 
+        <div class="card">
+            <Chart
+            titleText="Strike Rate"
+            subTitleText="A player who can score in any field is dependable"
+            chartType="bar"
+            :chartData="StrikeRateData.data"
+            :chartOptions="StrikeRateData.options"
+            :parentStyle="chartContainerStyle"
+            />
+        </div>
+
     </div>
 </template>
 
@@ -122,6 +133,15 @@ export default {
                 stacked: true
             }]
          }
+        },
+        data: {
+          labels: [],
+          datasets: []
+        }
+      },
+      StrikeRateData: {
+        options: {
+          responsive: true
         },
         data: {
           labels: [],
@@ -244,6 +264,37 @@ export default {
           borderColor: '#777'
         }
       ]
+    };
+
+    const strikeRateData = [];
+    Object.values(location_bat_odi).forEach(player => {
+      strikeRateData.push({
+        name: player.player_name,
+        strike_rate: player.details.total.strike_rate
+      });
+    });
+    strikeRateData.sort((t1, t2) => {
+      return t2.strike_rate - t1.strike_rate
+    });
+    this.StrikeRateData.data = {
+      labels: strikeRateData.map(t => t.name),
+      datasets: [{
+        label: 'Strike Rate',
+        data: strikeRateData.map(t => t.strike_rate),
+        backgroundColor: [
+          'rgb(255, 224, 230)',
+          'rgb(255, 245, 221)',
+          'rgb(219, 242, 242)',
+          'rgb(215, 236, 251)',
+          'rgb(235, 224, 255)',
+          'rgb(244, 245, 245)',
+          'rgb(255, 236, 217)'
+        ],
+        borderWidth: 1,
+        borderColor: '#777',
+        hoverBorderWidth: 2,
+        hoverBorderColor: '#333',
+      }]
     };
 
   }
