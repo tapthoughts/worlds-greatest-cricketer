@@ -304,12 +304,12 @@ export default {
         data: avgOverInngsData.map(t => t.avg),
         backgroundColor: [
           'rgb(255, 224, 230, 0.5)',
+          'rgb(255, 226, 217, 0.5)',
           'rgb(255, 245, 221, 0.5)',
           'rgb(219, 242, 242, 0.5)',
           'rgb(215, 236, 251, 0.5)',
           'rgb(235, 224, 255, 0.5)',
           'rgb(244, 245, 245, 0.5)',
-          'rgb(255, 236, 217, 0.5)'
         ],
         borderWidth: 0.8,
         borderColor: [
@@ -330,7 +330,7 @@ export default {
           'rgb(54, 162, 235, 1)',
           'rgb(153, 102, 255, 1)',
           'rgb(201, 203, 207, 1)'
-        ],
+        ]
       }]
     };
 
