@@ -353,7 +353,6 @@ export default {
           borderColor: 'rgb(255, 99, 132, 1)',
           hoverBorderWidth: 1,
           hoverBorderColor: 'rgb(255, 99, 132, 1)'
-
       },
       {
         label: 'Home',
