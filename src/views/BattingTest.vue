@@ -78,8 +78,8 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Only Sir Don Bradman is the player made a double century in ODI. He is somewhat likely to convert that 100 into 200 whereas, other player don't even dream such highs."
-            winner="Sir Don Bradman"
+            inference="According to the graph, Sir Don Bradman has most number of double centuries but considering small number of matches played with comparision to Sachin Tendulkar, I think he's the winner."
+            winner="Sachin Tendulkar"
             titleText="scoring big runs"
             />
         </div>
