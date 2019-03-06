@@ -5,9 +5,9 @@
             <Chart
             titleText="Average Runs Scored"
             subTitleText="A good average score of all matches is what makes a player dependable"
-            chartType="bar"
-            :chartData="AvgOverInngsData.data"
-            :chartOptions="AvgOverInngsData.options"
+            chartType="horizontalBar"
+            :chartData="AvgOverInngsTestData.data"
+            :chartOptions="AvgOverInngsTestData.options"
             :parentStyle="chartContainerStyle"
             />
             <Inference
@@ -155,7 +155,7 @@
 import Chart from '@/components/Chart.vue';
 import Inference from '@/components/Inference.vue';
 
-import location_bat_odi from '../../json/locationbattingODI.json';
+import location_bat_test from '../../json/locationbattingTest.json';
 
 export default {
     name: 'battingTest',
@@ -170,7 +170,7 @@ export default {
         width: '45vw',
         display: 'inline-block'
       },
-      AvgOverInngsData: {
+      AvgOverInngsTestData: {
         options: {
           responsive: true,
           scales: {
@@ -287,21 +287,21 @@ export default {
   },
   mounted() {
 
-    const avgOverInngsData = [];
-    Object.values(location_bat_odi).forEach(player => {
-      avgOverInngsData.push({
+    const avgOverInngsTestData = [];
+    Object.values(location_bat_test).forEach(player => {
+      avgOverInngsTestData.push({
         name: player.player_name,
         avg: player.details.total.avg
       });
     });
-    avgOverInngsData.sort((t1, t2) => {
+    avgOverInngsTestData.sort((t1, t2) => {
       return t2.avg - t1.avg
     });
-    this.AvgOverInngsData.data = {
-      labels: avgOverInngsData.map(t => t.name),
+    this.AvgOverInngsTestData.data = {
+      labels: avgOverInngsTestData.map(t => t.name),
       datasets: [{
         label: 'Average Runs of all Matches',
-        data: avgOverInngsData.map(t => t.avg),
+        data: avgOverInngsTestData.map(t => t.avg),
         backgroundColor: [
           'rgb(255, 224, 230)',
           'rgb(255, 245, 221)',
@@ -319,7 +319,7 @@ export default {
     };
 
     const homeAwayScoreData = [];
-    Object.values(location_bat_odi).forEach(player => {
+    Object.values(location_bat_test).forEach(player => {
       homeAwayScoreData.push({
         name: player.player_name,
         awayAvg: player.details.away.avg,
@@ -346,7 +346,7 @@ export default {
     };
 
     const conversionToCenturyData = [];
-    Object.values(location_bat_odi).forEach(player => {
+    Object.values(location_bat_test).forEach(player => {
       conversionToCenturyData.push({
         name: player.player_name,
         hundreds: player.details.total.hundreds,
@@ -374,7 +374,7 @@ export default {
     };
 
     const conversionToDoubleCenturyData = [];
-    Object.values(location_bat_odi).forEach(player => {
+    Object.values(location_bat_test).forEach(player => {
       conversionToDoubleCenturyData.push({
         name: player.player_name,
         hundreds: player.details.total.hundreds,
@@ -402,7 +402,7 @@ export default {
     };
 
     const strikeRateData = [];
-    Object.values(location_bat_odi).forEach(player => {
+    Object.values(location_bat_test).forEach(player => {
       strikeRateData.push({
         name: player.player_name,
         strike_rate: player.details.total.strike_rate
@@ -433,7 +433,7 @@ export default {
     };
 
     const boundariesData = [];
-    Object.values(location_bat_odi).forEach(player => {
+    Object.values(location_bat_test).forEach(player => {
       boundariesData.push({
         name: player.player_name,
         fours: player.details.total.fours,
@@ -461,7 +461,7 @@ export default {
     };
 
     const momData = [];
-    Object.values(location_bat_odi).forEach(player => {
+    Object.values(location_bat_test).forEach(player => {
       momData.push({
         name: player.player_name,
         mom: player.details.total.mom
