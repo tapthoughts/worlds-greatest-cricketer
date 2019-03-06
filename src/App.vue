@@ -11,7 +11,7 @@
         </el-header>
         <el-main>
           <transition name="page" mode="out-in">
-            <router-view style="margin-top: 40px"></router-view>
+            <router-view style="margin-top: 10px"></router-view>
           </transition>
         </el-main>
       </el-container>

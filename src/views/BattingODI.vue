@@ -1,6 +1,6 @@
 <template>
     <div class="batting-odi">
-        <!-- <h1>Here, we get batting stats for ODI matches.</h1> -->
+        <el-tag class="tags">Consistency of Player: Average runs, Runs at Home VS Away matches & ICC Ranking </el-tag>
         <div class="card">
             <Chart
             titleText="Average Over Innings"
@@ -24,6 +24,9 @@
             :chartOptions="HomeAwayScoreData.options"
             :parentStyle="chartContainerStyle"
             />
+            <Inference
+            inference="A consistent good average is what makes a player dependable"
+            />
         </div>
 
         <div class="card">
@@ -34,6 +37,9 @@
             :chartData="ConversionToCenturyData.data"
             :chartOptions="ConversionToCenturyData.options"
             :parentStyle="chartContainerStyle"
+            />
+            <Inference
+            inference="A consistent good average is what makes a player dependable"
             />
         </div>
 
@@ -46,6 +52,9 @@
             :chartOptions="ConversionToDoubleCenturyData.options"
             :parentStyle="chartContainerStyle"
             />
+            <Inference
+            inference="A consistent good average is what makes a player dependable"
+            />
         </div>
 
         <div class="card">
@@ -56,6 +65,9 @@
             :chartData="MomData.data"
             :chartOptions="MomData.options"
             :parentStyle="chartContainerStyle"
+            />
+            <Inference
+            inference="A consistent good average is what makes a player dependable"
             />
         </div>
 
@@ -68,6 +80,9 @@
             :chartOptions="StrikeRateData.options"
             :parentStyle="chartContainerStyle"
             />
+            <Inference
+            inference="A consistent good average is what makes a player dependable"
+            />
         </div>
 
         <div class="card">
@@ -78,6 +93,9 @@
             :chartData="BoundariesData.data"
             :chartOptions="BoundariesData.options"
             :parentStyle="chartContainerStyle"
+            />
+            <Inference
+            inference="A consistent good average is what makes a player dependable"
             />
         </div>
 
@@ -429,6 +447,9 @@ export default {
 </script>
 
 <style scoped>
-
+.tags {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
 
 </style>
