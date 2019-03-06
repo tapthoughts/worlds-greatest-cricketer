@@ -88,7 +88,7 @@
             <Chart
             titleText="Man of the Match Awards"
             subTitleText="Most number of Man of the Match Awards determine your winning contribution"
-            chartType="bar"
+            chartType="horizontalBar"
             :chartData="MomData.data"
             :chartOptions="MomData.options"
             :parentStyle="chartContainerStyle"
@@ -106,7 +106,7 @@
             <Chart
             titleText="Strike Rate"
             subTitleText="Scoring runs faster in ODI is primary target"
-            chartType="bar"
+            chartType="horizontalBar"
             :chartData="StrikeRateData.data"
             :chartOptions="StrikeRateData.options"
             :parentStyle="chartContainerStyle"
