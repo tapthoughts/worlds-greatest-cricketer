@@ -19,18 +19,35 @@
 
         <div class="card">
             <Chart
-            titleText="Home vs Away"
-            subTitleText="A player who can score in any field is dependable"
+            titleText="Avg Runs Scored (Home vs Away)"
+            subTitleText="Let's see which player is durable under pressure"
             chartType="horizontalBar"
             :chartData="HomeAwayScoreData.data"
             :chartOptions="HomeAwayScoreData.options"
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference=""
-            winner="Michael Bevan"
-            titleText="average runs scored"
+            inference="Under pressure, Sir Viv Richards outperforms every other player by a significant margin. Michael Bevan doesn’t care much, he will consistently perform as he usually does."
+            winner="Sir Viv Richards"
+            titleText="scoring under pressure"
             />
+            <br/>
+            <el-popover
+              placement="top-start"
+              title="Home Score"
+              width="200"
+              trigger="hover"
+              content="Score of a player when he scores in the country of his nationality">
+              <el-button slot="reference">Home Score</el-button>
+            </el-popover>
+            <el-popover
+              placement="top-start"
+              title="Away Score"
+              width="200"
+              trigger="hover"
+              content="Score of a player when he scores in the country in whose oppsition he's playing">
+              <el-button slot="reference">Away Score</el-button>
+            </el-popover>
         </div>
 
         <el-tag class="tags bottomtags"><b>Player Dominance:</b> Conversion rate of 50s into 100s, 100s into 200s & Man of the Match Awards </el-tag>
@@ -291,14 +308,14 @@ export default {
         {
           label: 'Away',
           data: homeAwayScoreData.map(t => t.awayAvg),
-          backgroundColor: 'rgb(164, 255, 64)',
+          backgroundColor: 'rgb(255, 245, 221)',
           borderWidth: 0.5,
           borderColor: '#777'
       },
       {
         label: 'Home',
         data: homeAwayScoreData.map(t => t.homeAvg),
-        backgroundColor: 'rgb(92, 222, 255)',
+        backgroundColor: 'rgb(219, 242, 242)',
         borderWidth: 0.5,
         borderColor: '#777'
       }]
@@ -318,14 +335,14 @@ export default {
         {
           label: 'Half Century',
           data: conversionToCenturyData.map(t => t.fifties),
-          backgroundColor: 'rgb(255, 87, 89)',
+          backgroundColor: 'rgb(255, 224, 230)',
           borderWidth: 0.5,
           borderColor: '#777'
         },
         {
           label: 'Century',
           data: conversionToCenturyData.map(t => t.hundreds),
-          backgroundColor: 'rgb(89, 161, 79)',
+          backgroundColor: 'rgb(215, 236, 251)',
           borderWidth: 0.5,
           borderColor: '#777'
         }
