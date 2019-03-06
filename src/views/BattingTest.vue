@@ -146,7 +146,7 @@
         <div class="card center">
           <h1>The Test verdict - Batting</h1>
           <span class="result"> Sachin Tendulkar Wins !! </span>
-          <span class="result-ps"> PS: Sir Donald Bradman is greatest batsman to be known but considering the career span and facing of all-time fastest bowlers by Sachin Tendulkar, he wins atleast in my personal view. </span>
+          <!-- <span class="result-ps"> PS: Sir Donald Bradman is greatest batsman to be known but considering the career span and facing of all-time fastest bowlers by Sachin Tendulkar, he wins atleast in my personal view. </span> -->
         </div>
 
     </div>
