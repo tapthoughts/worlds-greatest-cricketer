@@ -37,7 +37,7 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: rgb(58,55,52);
 }
 
 .container {
@@ -66,7 +66,7 @@ export default {
     border: 1px solid #ebeef5;
     background-color: #fff;
     overflow: hidden;
-    color: #303133;
+    color: rgb(58,55,52);;
     transition: .3s;
     padding: 20px;
     width: 96%;
@@ -78,7 +78,7 @@ export default {
 }
 
 .result {
-    color: gray;
+    color: rgb(58,55,52);
     font-size: 25px;
     font-weight: bold;
     display: block;
@@ -90,7 +90,7 @@ export default {
 }
 
 .result-ps {
-    color: gray;
+    color: rgb(58,55,52);
     font-size: 15px;
     font-weight: normal;
     display: block;
@@ -103,7 +103,7 @@ export default {
 }
 
 h1 {
-    color: #333;
+    color: rgb(58,55,52);
     font-size: 25px;
     display: block;
     margin-block-start: 0.67em;

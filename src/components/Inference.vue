@@ -1,6 +1,6 @@
 <template>
     <div class="inference-container">
-        <h1>Inference from Chart</h1>
+        <h2>Inference from Chart</h2>
         <span v-if="inference" class="inference">{{inference}}</span>
         <span v-if="winner" class="winner">Winner for {{titleText}} is {{winner}}</span>
     </div>
@@ -21,11 +21,11 @@ export default {
     padding: 12px;
     margin-top: 150px;
     border-left: 2px solid grey;
-    height: 250px;
+    height: 220px;
 }
 
 .inference {
-    color: gray;
+    color: rgb(58,55,52);
     font-size: 15px;
     font-weight: normal;
     display: block;
@@ -36,7 +36,7 @@ export default {
 }
 
 .winner {
-    color: gray;
+    color: rgb(58,55,52);
     font-size: 15px;
     font-weight: bold;
     display: block;

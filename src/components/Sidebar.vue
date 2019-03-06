@@ -75,5 +75,11 @@ export default {
     width: 225px;
     min-height: 400px;
   } */
-
+.sidebar {
+    background-color: rgb(58,55,52);
+   
+}
+.el-menu-vertical-demo {
+     background: rgb(58,55,52);
+}
 </style>
