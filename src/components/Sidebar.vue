@@ -14,7 +14,7 @@
             </el-menu-item>
             <el-submenu index="2">
             <template slot="title">
-                <i class="el-icon-location"></i>
+                <i class="el-icon-view"></i>
                 <span>Visualization</span>
             </template>
             <el-menu-item-group title="Batting Statistics">
