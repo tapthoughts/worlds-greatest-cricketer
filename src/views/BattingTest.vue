@@ -105,15 +105,15 @@
         <div class="card">
             <Chart
             titleText="Strike Rate"
-            subTitleText="Scoring runs faster in ODI is primary target"
+            subTitleText="Scoring runs faster always give an edge, whatever innings maybe"
             chartType="horizontalBar"
             :chartData="StrikeRateData.data"
             :chartOptions="StrikeRateData.options"
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Both, Sachin Tendulkar and Sir Viv Richards have similarly high batting strike rate."
-            winner="both Sir Viv Richards & Sachin Tendulkar"
+            inference="Sir Viv Richards have relatively high batting strike rate when compared with any other player."
+            winner="Sir Viv Richards"
             titleText="having high strike rate"
             />
             <br/>
