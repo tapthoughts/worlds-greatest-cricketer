@@ -34,6 +34,17 @@
             />
         </div>
 
+        <div class="card">
+            <Chart
+            titleText="Conversion 100s to 200s"
+            subTitleText="A player who can score in any field is dependable"
+            chartType="horizontalBar"
+            :chartData="ConversionToDoubleCenturyData.data"
+            :chartOptions="ConversionToDoubleCenturyData.options"
+            :parentStyle="chartContainerStyle"
+            />
+        </div>
+
     </div>
 </template>
 
@@ -87,9 +98,26 @@ export default {
         options: {
           responsive: true,
           scales: {
-            // xAxes: [{
-            //     stacked: true
-            // }],
+            xAxes: [{
+                stacked: true
+            }],
+            yAxes: [{
+                stacked: true
+            }]
+         }
+        },
+        data: {
+          labels: [],
+          datasets: []
+        }
+      },
+      ConversionToDoubleCenturyData: {
+        options: {
+          responsive: true,
+          scales: {
+            xAxes: [{
+                stacked: true
+            }],
             yAxes: [{
                 stacked: true
             }]
@@ -105,18 +133,15 @@ export default {
   mounted() {
 
     const avgOverInngsData = [];
-
     Object.values(location_bat_odi).forEach(player => {
       avgOverInngsData.push({
         name: player.player_name,
         avg: player.details.total.avg
       });
     });
-
     avgOverInngsData.sort((t1, t2) => {
       return t2.avg - t1.avg
     });
-
     this.AvgOverInngsData.data = {
       labels: avgOverInngsData.map(t => t.name),
       datasets: [{
@@ -139,7 +164,6 @@ export default {
     };
 
     const homeAwayScoreData = [];
-
     Object.values(location_bat_odi).forEach(player => {
       homeAwayScoreData.push({
         name: player.player_name,
@@ -147,11 +171,6 @@ export default {
         homeAvg: player.details.home.avg
       });
     });
-
-    // homeAwayScore.sort((t1, t2) => {
-    //   return t2.avg - t1.avg
-    // });
-
     this.HomeAwayScoreData.data = {
       labels: homeAwayScoreData.map(t => t.name),
       datasets: [
@@ -169,6 +188,62 @@ export default {
         borderWidth: 0.5,
         borderColor: '#777'
       }]
+    };
+
+    const conversionToCenturyData = [];
+    Object.values(location_bat_odi).forEach(player => {
+      conversionToCenturyData.push({
+        name: player.player_name,
+        hundreds: player.details.total.hundreds,
+        fifties: player.details.total.fifties
+      });
+    });
+    this.ConversionToCenturyData.data = {
+      labels: conversionToCenturyData.map(t => t.name),
+      datasets: [
+        {
+          label: 'Fifties',
+          data: conversionToCenturyData.map(t => t.fifties),
+          backgroundColor: 'rgb(255, 87, 89)',
+          borderWidth: 0.5,
+          borderColor: '#777'
+        },
+        {
+          label: 'Hundreds',
+          data: conversionToCenturyData.map(t => t.hundreds),
+          backgroundColor: 'rgb(89, 161, 79)',
+          borderWidth: 0.5,
+          borderColor: '#777'
+        }
+      ]
+    };
+
+    const conversionToDoubleCenturyData = [];
+    Object.values(location_bat_odi).forEach(player => {
+      conversionToDoubleCenturyData.push({
+        name: player.player_name,
+        hundreds: player.details.total.hundreds,
+        fifties: player.details.total.fifties
+      });
+    });
+    this.ConversionToDoubleCenturyData.data = {
+      labels: conversionToDoubleCenturyData.map(t => t.name),
+      datasets: [
+        {
+          label: 'Fifties',
+          data: conversionToDoubleCenturyData.map(t => t.fifties),
+          backgroundColor: 'rgb(255, 87, 89)',
+          borderWidth: 0.5,
+          borderColor: '#777'
+        },
+        {
+          label: 'Hundreds',
+          data: conversionToDoubleCenturyData.map(t => t.hundreds),
+          backgroundColor: 'rgb(89, 161, 79)',
+          borderWidth: 0.5,
+          borderColor: '#777'
+        }
+      ]
     };
 
   }
