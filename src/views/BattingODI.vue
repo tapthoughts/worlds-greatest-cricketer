@@ -348,16 +348,21 @@ export default {
         {
           label: 'Away',
           data: homeAwayScoreData.map(t => t.awayAvg),
-          backgroundColor: 'rgb(255, 245, 221)',
+          backgroundColor: 'rgb(255, 224, 230, 0.5)',
           borderWidth: 0.5,
-          borderColor: '#777'
+          borderColor: 'rgb(255, 99, 132, 1)',
+          hoverBorderWidth: 1,
+          hoverBorderColor: 'rgb(255, 99, 132, 1)'
+
       },
       {
         label: 'Home',
         data: homeAwayScoreData.map(t => t.homeAvg),
-        backgroundColor: 'rgb(219, 242, 242)',
+        backgroundColor: 'rgb(219, 242, 242, 0.5)',
         borderWidth: 0.5,
-        borderColor: '#777'
+        borderColor: 'rgb(75, 192, 192, 1)',
+        hoverBorderWidth: 1,
+        hoverBorderColor: 'rgb(75, 192, 192, 1)'
       }]
     };
 
@@ -375,16 +380,20 @@ export default {
         {
           label: 'Half Century',
           data: conversionToCenturyData.map(t => t.fifties),
-          backgroundColor: 'rgb(255, 224, 230)',
+          backgroundColor: 'rgb(255, 224, 230, 0.5)',
           borderWidth: 0.5,
-          borderColor: '#777'
+          borderColor: 'rgb(255, 99, 132, 1)',
+          hoverBorderWidth: 1,
+          hoverBorderColor: 'rgb(255, 99, 132, 1)'
         },
         {
           label: 'Century',
           data: conversionToCenturyData.map(t => t.hundreds),
-          backgroundColor: 'rgb(215, 236, 251)',
+          backgroundColor: 'rgb(219, 242, 242, 0.5)',
           borderWidth: 0.5,
-          borderColor: '#777'
+          borderColor: 'rgb(75, 192, 192, 1)',
+          hoverBorderWidth: 1,
+          hoverBorderColor: 'rgb(75, 192, 192, 1)'
         }
       ]
     };
@@ -403,16 +412,20 @@ export default {
         {
           label: 'Century',
           data: conversionToDoubleCenturyData.map(t => t.hundreds),
-          backgroundColor: 'rgb(255, 245, 221)',
+          backgroundColor: 'rgb(255, 226, 217, 0.5)',
           borderWidth: 0.5,
-          borderColor: '#777'
+          borderColor: 'rgb(255, 159, 64, 1)',
+          hoverBorderWidth: 1,
+          hoverBorderColor: 'rgb(255, 159, 64, 1)'
         },
         {
           label: 'Double Century',
           data: conversionToDoubleCenturyData.map(t => t.doublecentury),
-          backgroundColor: 'rgb(235, 224, 255)',
+          backgroundColor: 'rgb(215, 236, 251, 0.5)',
           borderWidth: 0.5,
-          borderColor: '#777'
+          borderColor: 'rgb(54, 162, 235, 1)',
+          hoverBorderWidth: 1,
+          hoverBorderColor: 'rgb(54, 162, 235, 1)'
         }
       ]
     };
@@ -433,18 +446,34 @@ export default {
         label: 'Strike Rate',
         data: strikeRateData.map(t => t.strike_rate),
         backgroundColor: [
-          'rgb(255, 224, 230)',
-          'rgb(255, 245, 221)',
-          'rgb(219, 242, 242)',
-          'rgb(215, 236, 251)',
-          'rgb(235, 224, 255)',
-          'rgb(244, 245, 245)',
-          'rgb(255, 236, 217)'
+          'rgb(219, 242, 242, 0.5)',
+          'rgb(215, 236, 251, 0.5)',
+          'rgb(235, 224, 255, 0.5)',
+          'rgb(255, 224, 230, 0.5)',
+          'rgb(255, 226, 217, 0.5)',
+          'rgb(255, 245, 221, 0.5)',
+          'rgb(244, 245, 245, 0.5)',
         ],
-        borderWidth: 1,
-        borderColor: '#777',
-        hoverBorderWidth: 2,
-        hoverBorderColor: '#333',
+        borderWidth: 0.8,
+        borderColor: [
+          'rgb(75, 192, 192, 1)',
+          'rgb(54, 162, 235, 1)',
+          'rgb(153, 102, 255, 1)',
+          'rgb(255, 99, 132, 1)',
+          'rgb(255, 159, 64, 1)',
+          'rgb(255, 205, 86, 1)',
+          'rgb(201, 203, 207, 1)'
+        ],
+        hoverBorderWidth: 1.2,
+        hoverBorderColor: [
+          'rgb(75, 192, 192, 1)',
+          'rgb(54, 162, 235, 1)',
+          'rgb(153, 102, 255, 1)',
+          'rgb(255, 99, 132, 1)',
+          'rgb(255, 159, 64, 1)',
+          'rgb(255, 205, 86, 1)',
+          'rgb(201, 203, 207, 1)'
+        ]
       }]
     };
 
@@ -462,16 +491,20 @@ export default {
         {
           label: 'Fours',
           data: boundariesData.map(t => t.fours),
-          backgroundColor: 'rgb(219, 242, 242)',
+          backgroundColor: 'rgb(255, 226, 217, 0.5)',
           borderWidth: 0.5,
-          borderColor: '#777'
+          borderColor: 'rgb(255, 159, 64, 1)',
+          hoverBorderWidth: 1,
+          hoverBorderColor: 'rgb(255, 159, 64, 1)'
         },
         {
           label: 'Sixes',
           data: boundariesData.map(t => t.sixes),
-          backgroundColor: 'rgb(255, 236, 217)',
+          backgroundColor: 'rgb(215, 236, 251, 0.5)',
           borderWidth: 0.5,
-          borderColor: '#777'
+          borderColor: 'rgb(54, 162, 235, 1)',
+          hoverBorderWidth: 1,
+          hoverBorderColor: 'rgb(54, 162, 235, 1)'
         }
       ]
     };
@@ -492,18 +525,34 @@ export default {
         label: 'Man of Match',
         data: momData.map(t => t.mom),
         backgroundColor: [
-          'rgb(255, 224, 230)',
-          'rgb(255, 245, 221)',
-          'rgb(219, 242, 242)',
-          'rgb(215, 236, 251)',
-          'rgb(235, 224, 255)',
-          'rgb(244, 245, 245)',
-          'rgb(255, 236, 217)'
+          'rgb(255, 224, 230, 0.5)',
+          'rgb(215, 236, 251, 0.5)',
+          'rgb(255, 226, 217, 0.5)',
+          'rgb(255, 245, 221, 0.5)',
+          'rgb(219, 242, 242, 0.5)',
+          'rgb(235, 224, 255, 0.5)',
+          'rgb(244, 245, 245, 0.5)',
         ],
-        borderWidth: 1,
-        borderColor: '#777',
-        hoverBorderWidth: 2,
-        hoverBorderColor: '#333',
+        borderWidth: 0.8,
+        borderColor: [
+          'rgb(255, 99, 132, 1)',
+          'rgb(54, 162, 235, 1)',
+          'rgb(255, 159, 64, 1)',
+          'rgb(255, 205, 86, 1)',
+          'rgb(75, 192, 192, 1)',
+          'rgb(153, 102, 255, 1)',
+          'rgb(201, 203, 207, 1)'
+        ],
+        hoverBorderWidth: 1.2,
+        hoverBorderColor: [
+          'rgb(255, 99, 132, 1)',
+          'rgb(54, 162, 235, 1)',
+          'rgb(255, 159, 64, 1)',
+          'rgb(255, 205, 86, 1)',
+          'rgb(75, 192, 192, 1)',
+          'rgb(153, 102, 255, 1)',
+          'rgb(201, 203, 207, 1)'
+        ]
       }]
     };
 
