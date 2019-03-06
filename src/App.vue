@@ -2,7 +2,7 @@
   <div id="app">
     <el-container>
       <el-aside width="225px">
-        <div class="logo-container"> Visualize </div>
+        <div class="logo-container"> Data Visualization </div>
         <Sidebar />
       </el-aside>
       <el-container>
@@ -53,6 +53,7 @@ export default {
 
 .logo-container {
   padding: 20px;
+  text-align: center;
   background: #434A50;
 }
 
@@ -68,7 +69,7 @@ export default {
     color: #303133;
     transition: .3s;
     padding: 20px;
-    width: 95%;
+    width: 96%;
 }
 
 .card:hover {

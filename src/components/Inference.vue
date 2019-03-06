@@ -2,13 +2,14 @@
     <div class="inference-container">
         <h1>Inference from Chart</h1>
         <span v-if="inference" class="inference">{{inference}}</span>
+        <span v-if="winner" class="winner">Winner for {{titleText}} is {{winner}}</span>
     </div>
 </template>
 
 <script>
 export default {
   name: 'Inference',
-  props: ['inference']
+  props: ['inference', 'winner', 'titleText']
 };
 </script>
 
@@ -28,6 +29,18 @@ export default {
     font-size: 15px;
     font-weight: normal;
     display: block;
+    margin-block-start: 0.42em;
+    margin-block-end: 0.42em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.winner {
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
     margin-block-start: 0.42em;
     margin-block-end: 0.42em;
     margin-inline-start: 0px;

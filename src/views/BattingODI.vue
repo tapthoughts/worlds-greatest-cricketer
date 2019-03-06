@@ -1,23 +1,25 @@
 <template>
     <div class="batting-odi">
-        <el-tag class="tags">Consistency of Player: Average runs, Runs at Home VS Away matches & ICC Ranking </el-tag>
+        <el-tag class="tags"><b>Consistency of Player:</b> Average runs, Runs at Home VS Away matches & ICC Ranking </el-tag>
         <div class="card">
             <Chart
-            titleText="Average Over Innings"
-            subTitleText="A consistent good average is what makes a player dependable"
+            titleText="Average Runs Scored"
+            subTitleText="A good average score of all matches is what makes a player dependable"
             chartType="bar"
             :chartData="AvgOverInngsData.data"
             :chartOptions="AvgOverInngsData.options"
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="A consistent good average is what makes a player dependable"
+            inference="Clearly, Michael Bevan rules the average turf. Sachin Tendulkar and Sir Viv Richards are nearly equal."
+            winner="Michael Bevan"
+            titleText="average runs scored"
             />
         </div>
 
         <div class="card">
             <Chart
-            titleText="Home VS Away"
+            titleText="Home vs Away"
             subTitleText="A player who can score in any field is dependable"
             chartType="horizontalBar"
             :chartData="HomeAwayScoreData.data"
@@ -25,10 +27,14 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="A consistent good average is what makes a player dependable"
+            inference=""
+            winner="Michael Bevan"
+            titleText="average runs scored"
             />
         </div>
 
+        <el-tag class="tags bottomtags"><b>Player Dominance:</b> Conversion rate of 50s into 100s, 100s into 200s & Man of the Match Awards </el-tag>
+        
         <div class="card">
             <Chart
             titleText="Conversion 50s to 100s"
@@ -71,6 +77,8 @@
             />
         </div>
 
+        <el-tag class="tags bottomtags"><b>Hitting Strength:</b> Strike Rate, Number of Boundaries </el-tag>
+          
         <div class="card">
             <Chart
             titleText="Strike Rate"
@@ -452,4 +460,7 @@ export default {
   font-size: 16px;
 }
 
+.bottomtags {
+  margin-top: 30px;
+}
 </style>
