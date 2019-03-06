@@ -11,8 +11,8 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Clearly, Michael Bevan rules the average turf. Sachin Tendulkar and Sir Viv Richards are nearly equal."
-            winner="Michael Bevan"
+            inference="Clearly, Sir Don Bradman rules the average turf. Sachin Tendulkar and Gary Sobers are nearly equal."
+            winner="Sir Don Bradman"
             titleText="average runs scored"
             />
         </div>
@@ -78,8 +78,8 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Only Sachin Tendulkar is the player made a double century in ODI. He is somewhat likely to convert that 100 into 200 whereas, other player don't even dream such highs."
-            winner="Sachin Tendulkar"
+            inference="Only Sir Don Bradman is the player made a double century in ODI. He is somewhat likely to convert that 100 into 200 whereas, other player don't even dream such highs."
+            winner="Sir Don Bradman"
             titleText="scoring big runs"
             />
         </div>
