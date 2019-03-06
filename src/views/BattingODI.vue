@@ -11,6 +11,29 @@
             :parentStyle="chartContainerStyle"
             />
         </div>
+
+        <div class="card">
+            <Chart
+            titleText="Home VS Away"
+            subTitleText="A player who can score in any field is dependable"
+            chartType="horizontalBar"
+            :chartData="HomeAwayScoreData.data"
+            :chartOptions="HomeAwayScoreData.options"
+            :parentStyle="chartContainerStyle"
+            />
+        </div>
+
+        <div class="card">
+            <Chart
+            titleText="Conversion 50s to 100s"
+            subTitleText="A player who can score in any field is dependable"
+            chartType="horizontalBar"
+            :chartData="ConversionToCenturyData.data"
+            :chartOptions="ConversionToCenturyData.options"
+            :parentStyle="chartContainerStyle"
+            />
+        </div>
+
     </div>
 </template>
 
@@ -45,6 +68,32 @@ export default {
             barThickness: 50
             }],
           }
+        },
+        data: {
+          labels: [],
+          datasets: []
+        }
+      },
+      HomeAwayScoreData: {
+        options: {
+          responsive: true
+        },
+        data: {
+          labels: [],
+          datasets: []
+        }
+      },
+      ConversionToCenturyData: {
+        options: {
+          responsive: true,
+          scales: {
+            // xAxes: [{
+            //     stacked: true
+            // }],
+            yAxes: [{
+                stacked: true
+            }]
+         }
         },
         data: {
           labels: [],
@@ -86,6 +135,39 @@ export default {
         borderColor: '#777',
         hoverBorderWidth: 2,
         hoverBorderColor: '#333',
+      }]
+    };
+
+    const homeAwayScoreData = [];
+
+    Object.values(location_bat_odi).forEach(player => {
+      homeAwayScoreData.push({
+        name: player.player_name,
+        awayAvg: player.details.away.avg,
+        homeAvg: player.details.home.avg
+      });
+    });
+
+    // homeAwayScore.sort((t1, t2) => {
+    //   return t2.avg - t1.avg
+    // });
+
+    this.HomeAwayScoreData.data = {
+      labels: homeAwayScoreData.map(t => t.name),
+      datasets: [
+        {
+          label: 'Away',
+          data: homeAwayScoreData.map(t => t.awayAvg),
+          backgroundColor: 'rgb(164, 255, 64)',
+          borderWidth: 0.5,
+          borderColor: '#777'
+      },
+      {
+        label: 'Home',
+        data: homeAwayScoreData.map(t => t.homeAvg),
+        backgroundColor: 'rgb(92, 222, 255)',
+        borderWidth: 0.5,
+        borderColor: '#777'
       }]
     };
 
