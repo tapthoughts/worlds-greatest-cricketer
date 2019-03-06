@@ -1,0 +1,222 @@
+[
+    {
+        "player_name": "Sachin Tendulkar",
+        "details": {
+            "away": {
+                "innings": 78,
+                "overs": 371.2,
+                "matches": 37,
+                "runs_conceded": 1392,
+                "wickets": 30,
+                "Best": "2/7 v NZ",
+                "3w": 0,
+                "5w": 0,
+                "avg": 46.4,
+                "economy_rate": 3.74,
+                "strike_rate": 74.26
+            },
+            "home": {
+                "innings": 67,
+                "overs": 335.2,
+                "matches": 46,
+                "runs_conceded": 1100,
+                "wickets": 16,
+                "Best": "3/10 v SA",
+                "3w": 2,
+                "5w": 0,
+                "avg": 68.75,
+                "economy_rate": 3.28,
+                "strike_rate": 125.75
+            },
+            "total": {
+                "innings": 145,
+                "overs": 706.4,
+                "matches": 83,
+                "runs_conceded": 2492,
+                "wickets": 46,
+                "Best": "3/3 v SA",
+                "3w": 2,
+                "5w": 0,
+                "avg": 57.58,
+                "economy_rate": 3.51,
+                "strike_rate": 100.01
+            }
+        }
+    },
+    {
+        "player_name": "Sir Viv Richards",
+        "details": {
+            "away": {
+                "innings": 51,
+                "overs": 336.1,
+                "matches": 97,
+                "runs_conceded": 1023,
+                "wickets": 16,
+                "Best": "2/17 v PAK",
+                "3w": 0,
+                "5w": 0,
+                "avg": 63.93,
+                "economy_rate": 2.28,
+                "strike_rate": 168.06
+            },
+            "home": {
+                "innings": 52,
+                "overs": 413.3,
+                "matches": 106,
+                "runs_conceded": 941,
+                "wickets": 16,
+                "Best": "2/17 v PAK",
+                "3w": 0,
+                "5w": 0,
+                "avg": 58.81,
+                "economy_rate": 2.27,
+                "strike_rate": 155.06
+            },
+            "total": {
+                "innings": 103,
+                "overs": 749.4,
+                "matches": 203,
+                "runs_conceded": 1964,
+                "wickets": 32,
+                "Best": "2/2 v PAK",
+                "3w": 0,
+                "5w": 0,
+                "avg": 61.37,
+                "economy_rate": 2.28,
+                "strike_rate": 161.56
+            }
+        }
+    },
+    {
+        "player_name": "Sir Don Bradman",
+        "details": {
+            "away": {
+                "innings": 9,
+                "overs": 20,
+                "matches": 3,
+                "runs_conceded": 72,
+                "wickets": 2,
+                "Best": "1/8 v WI",
+                "3w": 0,
+                "5w": 0,
+                "avg": 36,
+                "economy_rate": 2.7,
+                "strike_rate": 80
+            },
+            "home": {
+                "innings": 9,
+                "overs": 20,
+                "matches": 3,
+                "runs_conceded": 72,
+                "wickets": 2,
+                "Best": "1/8 v WI",
+                "3w": 0,
+                "5w": 0,
+                "avg": 36,
+                "economy_rate": 2.7,
+                "strike_rate": 80
+            },
+            "total": {
+                "innings": 9,
+                "overs": 20,
+                "matches": 3,
+                "runs_conceded": 72,
+                "wickets": 2,
+                "Best": "1/8 v WI",
+                "3w": 0,
+                "5w": 0,
+                "avg": 36,
+                "economy_rate": 2.7,
+                "strike_rate": 80
+            }
+        }
+    },
+    {
+        "player_name": "Gary Sobers",
+        "details": {
+            "away": {
+                "innings": 83,
+                "overs": 1438.7,
+                "matches": 457,
+                "runs_conceded": 4348,
+                "wickets": 128,
+                "Best": "6/73 v AUS",
+                "3w": 12,
+                "5w": 5,
+                "avg": 33.96,
+                "economy_rate": 2.26,
+                "strike_rate": 89.92
+            },
+            "home": {
+                "innings": 76,
+                "overs": 1681.2,
+                "matches": 517,
+                "runs_conceded": 3651,
+                "wickets": 107,
+                "Best": "5/41 v ENG",
+                "3w": 11,
+                "5w": 1,
+                "avg": 34.12,
+                "economy_rate": 2.17,
+                "strike_rate": 94.28
+            },
+            "total": {
+                "innings": 159,
+                "overs": 3119.9,
+                "matches": 974,
+                "runs_conceded": 7999,
+                "wickets": 235,
+                "Best": "6/6 v AUS",
+                "3w": 23,
+                "5w": 6,
+                "avg": 34.04,
+                "economy_rate": 2.22,
+                "strike_rate": 92.1
+            }
+        }
+    },
+    {
+        "player_name": "Allan Robert Bonder",
+        "details": {
+            "away": {
+                "innings": 48,
+                "overs": 338,
+                "matches": 110,
+                "runs_conceded": 756,
+                "wickets": 20,
+                "Best": "5/68 v WI",
+                "3w": 1,
+                "5w": 1,
+                "avg": 37.8,
+                "economy_rate": 2.23,
+                "strike_rate": 101.4
+            },
+            "home": {
+                "innings": 50,
+                "overs": 247.5,
+                "matches": 87,
+                "runs_conceded": 769,
+                "wickets": 19,
+                "Best": "7/46 v WI",
+                "3w": 0,
+                "5w": 1,
+                "avg": 40.47,
+                "economy_rate": 2.32,
+                "strike_rate": 104.26
+            },
+            "total": {
+                "innings": 98,
+                "overs": 585.5,
+                "matches": 197,
+                "runs_conceded": 1525,
+                "wickets": 39,
+                "Best": "7/7 v WI",
+                "3w": 1,
+                "5w": 2,
+                "avg": 39.14,
+                "economy_rate": 2.28,
+                "strike_rate": 102.83
+            }
+        }
+    }
+]
