@@ -130,7 +130,7 @@
         <div class="card">
             <Chart
             titleText="Number of 4's & 6's"
-            subTitleText="A player who hits more boundaries will score runs faster"
+            subTitleText="A player who hits more boundaries will score runs faster and probably much more than others"
             chartType="horizontalBar"
             :chartData="BoundariesData.data"
             :chartOptions="BoundariesData.options"
