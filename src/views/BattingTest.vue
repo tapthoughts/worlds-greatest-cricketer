@@ -27,8 +27,8 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Under pressure, Sir Viv Richards outperforms every other player by a significant margin. Michael Bevan doesn’t care much, he will consistently perform as he usually does."
-            winner="Sir Viv Richards"
+            inference="Sir Don Bradman outperforms every other player by a significant margin no matter whatever the conditions be."
+            winner="Sir Don Bradman"
             titleText="scoring under pressure"
             />
             <br/>
