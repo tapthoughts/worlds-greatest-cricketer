@@ -54,43 +54,49 @@
         
         <div class="card">
             <Chart
-            titleText="Conversion 50s to 100s"
-            subTitleText="A player who can score in any field is dependable"
+            titleText="Conversion of 50s to 100s"
+            subTitleText="Let's find ability of a player to play big knocks and provide the team with the winning runs"
             chartType="horizontalBar"
             :chartData="ConversionToCenturyData.data"
             :chartOptions="ConversionToCenturyData.options"
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="A consistent good average is what makes a player dependable"
+            inference="It is clearly evident that Sachin Tendulkar is the player who once settled, goes for the big runs. So it is advisable to restrict him before 50 otherwise he is more likely to convert that 50 into 100."
+            winner="Sachin Tendulkar"
+            titleText="scoring big runs"
             />
         </div>
 
         <div class="card">
             <Chart
             titleText="Conversion 100s to 200s"
-            subTitleText="A player who can score in any field is dependable"
+            subTitleText="Let's see who can score a double century"
             chartType="horizontalBar"
             :chartData="ConversionToDoubleCenturyData.data"
             :chartOptions="ConversionToDoubleCenturyData.options"
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="A consistent good average is what makes a player dependable"
+            inference="Only Sachin Tendulkar is the player made a double century in ODI. He is somewhat likely to convert that 100 into 200 whereas, other player don't even dream such highs."
+            winner="Sachin Tendulkar"
+            titleText="scoring big runs"
             />
         </div>
 
         <div class="card">
             <Chart
-            titleText="Winning Contribution"
-            subTitleText="Man of the Match by number of matches played"
+            titleText="Man of the Match Awards"
+            subTitleText="Most number of Man of the Match Awards determine your winning contribution"
             chartType="bar"
             :chartData="MomData.data"
             :chartOptions="MomData.options"
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="A consistent good average is what makes a player dependable"
+            inference="Sachin Tendulkar has the higher percentage of winning contribution than the rest."
+            winner="Sachin Tendulkar"
+            titleText="being winning contributor maximum times"
             />
         </div>
 
@@ -99,29 +105,47 @@
         <div class="card">
             <Chart
             titleText="Strike Rate"
-            subTitleText="A player who can score in any field is dependable"
+            subTitleText="Scoring runs faster in ODI is primary target"
             chartType="bar"
             :chartData="StrikeRateData.data"
             :chartOptions="StrikeRateData.options"
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="A consistent good average is what makes a player dependable"
+            inference="Both, Sachin Tendulkar and Sir Viv Richards have similarly high batting strike rate."
+            winner="both Sir Viv Richards & Sachin Tendulkar"
+            titleText="having high strike rate"
             />
+            <br/>
+            <el-popover
+              placement="top-start"
+              title="Strike Rate"
+              width="200"
+              trigger="hover"
+              content="Batting strike rate is a measure of how frequently a batsman achieves the primary goal of batting, namely scoring runs">
+              <el-button slot="reference">Strike rate</el-button>
+            </el-popover>
         </div>
 
         <div class="card">
             <Chart
             titleText="Number of 4's & 6's"
-            subTitleText="A player who can score in any field is dependable"
+            subTitleText="A player who hits more boundaries will score runs faster"
             chartType="horizontalBar"
             :chartData="BoundariesData.data"
             :chartOptions="BoundariesData.options"
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="A consistent good average is what makes a player dependable"
+            inference="Sachin Tendulkar likes to send the balls out of the ground, scoring most of his runs with 4's & 6's"
+            winner="Sachin Tendulkar"
+            titleText="hitting most boundaries"
             />
+        </div>
+
+        <div class="card center">
+          <h1>The ODI verdict - Batting</h1>
+          <span class="result"> Sachin Tendulkar Wins !! </span>
         </div>
 
     </div>
@@ -223,14 +247,14 @@ export default {
       BoundariesData: {
         options: {
           responsive: true,
-          scales: {
-            xAxes: [{
-                stacked: true
-            }],
-            yAxes: [{
-                stacked: true
-            }]
-         }
+        //   scales: {
+        //     xAxes: [{
+        //         stacked: true
+        //     }],
+        //     yAxes: [{
+        //         stacked: true
+        //     }]
+        //  }
         },
         data: {
           labels: [],
@@ -363,14 +387,14 @@ export default {
         {
           label: 'Century',
           data: conversionToDoubleCenturyData.map(t => t.hundreds),
-          backgroundColor: 'rgb(255, 87, 89)',
+          backgroundColor: 'rgb(255, 245, 221)',
           borderWidth: 0.5,
           borderColor: '#777'
         },
         {
           label: 'Double Century',
           data: conversionToDoubleCenturyData.map(t => t.doublecentury),
-          backgroundColor: 'rgb(89, 161, 79)',
+          backgroundColor: 'rgb(235, 224, 255)',
           borderWidth: 0.5,
           borderColor: '#777'
         }
@@ -422,14 +446,14 @@ export default {
         {
           label: 'Fours',
           data: boundariesData.map(t => t.fours),
-          backgroundColor: 'rgb(255, 87, 89)',
+          backgroundColor: 'rgb(219, 242, 242)',
           borderWidth: 0.5,
           borderColor: '#777'
         },
         {
           label: 'Sixes',
           data: boundariesData.map(t => t.sixes),
-          backgroundColor: 'rgb(89, 161, 79)',
+          backgroundColor: 'rgb(255, 236, 217)',
           borderWidth: 0.5,
           borderColor: '#777'
         }
@@ -479,5 +503,9 @@ export default {
 
 .bottomtags {
   margin-top: 30px;
+}
+
+.center {
+  text-align: center;
 }
 </style>

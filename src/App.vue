@@ -77,6 +77,18 @@ export default {
     box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
 }
 
+.result {
+    color: gray;
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    margin-block-start: 0.42em;
+    margin-block-end: 0.42em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 h1 {
     color: #333;
     font-size: 25px;
