@@ -9,7 +9,7 @@
             text-color="#fff"
             active-text-color="#ffd04b">
             <el-menu-item @click="routeHome()" index="1">
-            <i class="el-icon-menu"></i>
+            <i class="el-icon-d-arrow-right"></i>
             <span>Getting Started</span>
             </el-menu-item>
             <el-submenu index="2">
