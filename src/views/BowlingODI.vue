@@ -2,7 +2,7 @@
   <div class="bowling-odi">
     <div class="card">
             <Chart
-            titleText="Total Runs Conceded"
+            titleText="Average Runs Conceded"
             subTitleText="Lesser number of runs conceded symbolizes a good bowler"
             chartType="bar"
             :chartData="RunsConcededData.data"
@@ -10,10 +10,11 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Clearly, Michael Bevan rules the average turf. Sachin Tendulkar and
-                       Sir Viv Richards are nearly equal."
-            winner="Michael Bevan"
-            titleText="average runs scored"
+            inference="Though score of Ricky Ponting looks better but he bowled in only 25 overs
+                       & others bowled in atleast 300 overs. Neglecting him, 
+                       Sachin Tendulkar and Michael Bevan both wins"
+            winner="Sachin Tendulkar & Michael Bevan"
+            titleText="average runs conceded"
             />
       </div>
   </div>
@@ -74,7 +75,7 @@ export default {
     this.RunsConcededData.data = {
       labels: runsConcededData.map(t => t.name),
       datasets: [{
-        label: 'Runs Conceded in all Matches',
+        label: 'Avg Runs Conceded in all Matches',
         data: runsConcededData.map(t => t.runs),
         backgroundColor: [
           'rgb(255, 224, 230, 0.5)',
