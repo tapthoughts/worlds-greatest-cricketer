@@ -1,12 +1,13 @@
 <template>
   <div class="bowling-odi">
+
     <div class="card">
             <Chart
-            titleText="Average Runs Conceded"
+            titleText="Economy Rate"
             subTitleText="Lesser number of runs conceded symbolizes a good bowler"
             chartType="bar"
-            :chartData="RunsConcededData.data"
-            :chartOptions="RunsConcededData.options"
+            :chartData="EconomyRateData.data"
+            :chartOptions="EconomyRateData.options"
             :parentStyle="chartContainerStyle"
             />
             <Inference
@@ -17,6 +18,49 @@
             titleText="average runs conceded"
             />
       </div>
+
+      <div class="card">
+            <Chart
+            titleText="Strike Rate"
+            subTitleText="Scoring runs faster in ODI is primary target"
+            chartType="bar"
+            :chartData="StrikeRateData.data"
+            :chartOptions="StrikeRateData.options"
+            :parentStyle="chartContainerStyle"
+            />
+            <Inference
+            inference="Both, Sachin Tendulkar and Sir Viv Richards have similarly high batting strike rate."
+            winner="both Sir Viv Richards & Sachin Tendulkar"
+            titleText="having high strike rate"
+            />
+            <br/>
+            <el-popover
+              placement="top-start"
+              title="Strike Rate"
+              width="200"
+              trigger="hover"
+              content="Batting strike rate is a measure of how frequently a batsman achieves the primary
+                       goal of batting, namely scoring runs">
+              <el-button slot="reference">Define Strike rate</el-button>
+            </el-popover>
+        </div>
+
+        <div class="card">
+            <Chart
+            titleText="Average Maiden Overs"
+            subTitleText="Most number of Man of the Match Awards determine your winning contribution"
+            chartType="bar"
+            :chartData="MaidenOverData.data"
+            :chartOptions="MaidenOverData.options"
+            :parentStyle="chartContainerStyle"
+            />
+            <Inference
+            inference="Sachin Tendulkar has the higher percentage of winning contribution than the rest."
+            winner="Sachin Tendulkar"
+            titleText="being winning contributor maximum times"
+            />
+        </div>
+
   </div>
 </template>
 
@@ -39,7 +83,38 @@ export default {
         width: '45vw',
         display: 'inline-block',
       },
-      RunsConcededData: {
+      EconomyRateData: {
+        options: {
+          responsive: true,
+          scales: {
+            xAxes: [{
+              ticks: {
+                beginAtZero: true,
+                maxRotation: 0,
+                minRotation: 0,
+              },
+              gridLines: {
+                offsetGridLines: true,
+              },
+              barThickness: 50,
+            }],
+          },
+        },
+        data: {
+          labels: [],
+          datasets: [],
+        },
+      },
+      StrikeRateData: {
+        options: {
+          responsive: true,
+        },
+        data: {
+          labels: [],
+          datasets: [],
+        },
+      },
+      MaidenOverData: {
         options: {
           responsive: true,
           scales: {
@@ -64,19 +139,19 @@ export default {
     }
   },
   mounted() {
-    const runsConcededData = [];
+    const economyRateData = [];
     Object.values(locationBowlingODI).forEach((player) => {
-      runsConcededData.push({
+      economyRateData.push({
         name: player.player_name,
-        runs: player.details.total.runs_conceded / player.details.total.overs,
+        economy_rate: player.details.total.economy_rate,
       });
     });
-    runsConcededData.sort((t1, t2) => t1.runs - t2.runs);
-    this.RunsConcededData.data = {
-      labels: runsConcededData.map(t => t.name),
+    economyRateData.sort((t1, t2) => t1.economy_rate - t2.economy_rate);
+    this.EconomyRateData.data = {
+      labels: economyRateData.map(t => t.name),
       datasets: [{
         label: 'Avg Runs Conceded in all Matches',
-        data: runsConcededData.map(t => t.runs),
+        data: economyRateData.map(t => t.economy_rate),
         backgroundColor: [
           'rgb(255, 224, 230, 0.5)',
           'rgb(255, 226, 217, 0.5)',
@@ -103,6 +178,96 @@ export default {
           'rgb(255, 205, 86, 1)',
           'rgb(75, 192, 192, 1)',
           'rgb(54, 162, 235, 1)',
+          'rgb(153, 102, 255, 1)',
+          'rgb(201, 203, 207, 1)',
+        ],
+      }],
+    };
+
+    const strikeRateData = [];
+    Object.values(locationBowlingODI).forEach((player) => {
+      strikeRateData.push({
+        name: player.player_name,
+        strike_rate: player.details.total.strike_rate,
+      });
+    });
+    strikeRateData.sort((t1, t2) => t2.strike_rate - t1.strike_rate);
+    this.StrikeRateData.data = {
+      labels: strikeRateData.map(t => t.name),
+      datasets: [{
+        label: 'Strike Rate',
+        data: strikeRateData.map(t => t.strike_rate),
+        backgroundColor: [
+          'rgb(219, 242, 242, 0.5)',
+          'rgb(215, 236, 251, 0.5)',
+          'rgb(235, 224, 255, 0.5)',
+          'rgb(255, 224, 230, 0.5)',
+          'rgb(255, 226, 217, 0.5)',
+          'rgb(255, 245, 221, 0.5)',
+          'rgb(244, 245, 245, 0.5)',
+        ],
+        borderWidth: 0.8,
+        borderColor: [
+          'rgb(75, 192, 192, 1)',
+          'rgb(54, 162, 235, 1)',
+          'rgb(153, 102, 255, 1)',
+          'rgb(255, 99, 132, 1)',
+          'rgb(255, 159, 64, 1)',
+          'rgb(255, 205, 86, 1)',
+          'rgb(201, 203, 207, 1)',
+        ],
+        hoverBorderWidth: 1.2,
+        hoverBorderColor: [
+          'rgb(75, 192, 192, 1)',
+          'rgb(54, 162, 235, 1)',
+          'rgb(153, 102, 255, 1)',
+          'rgb(255, 99, 132, 1)',
+          'rgb(255, 159, 64, 1)',
+          'rgb(255, 205, 86, 1)',
+          'rgb(201, 203, 207, 1)',
+        ],
+      }],
+    };
+
+    const maidenOverData = [];
+    Object.values(locationBowlingODI).forEach((player) => {
+      maidenOverData.push({
+        name: player.player_name,
+        maiden_overs: (player.details.total.maiden_overs / player.details.total.overs)*1000,
+      });
+    });
+    maidenOverData.sort((t1, t2) => t2.maiden_overs - t1.maiden_overs);
+    this.MaidenOverData.data = {
+      labels: maidenOverData.map(t => t.name),
+      datasets: [{
+        label: 'Average Maiden Overs',
+        data: maidenOverData.map(t => t.maiden_overs),
+        backgroundColor: [
+          'rgb(255, 224, 230, 0.5)',
+          'rgb(215, 236, 251, 0.5)',
+          'rgb(255, 226, 217, 0.5)',
+          'rgb(255, 245, 221, 0.5)',
+          'rgb(219, 242, 242, 0.5)',
+          'rgb(235, 224, 255, 0.5)',
+          'rgb(244, 245, 245, 0.5)',
+        ],
+        borderWidth: 0.8,
+        borderColor: [
+          'rgb(255, 99, 132, 1)',
+          'rgb(54, 162, 235, 1)',
+          'rgb(255, 159, 64, 1)',
+          'rgb(255, 205, 86, 1)',
+          'rgb(75, 192, 192, 1)',
+          'rgb(153, 102, 255, 1)',
+          'rgb(201, 203, 207, 1)',
+        ],
+        hoverBorderWidth: 1.2,
+        hoverBorderColor: [
+          'rgb(255, 99, 132, 1)',
+          'rgb(54, 162, 235, 1)',
+          'rgb(255, 159, 64, 1)',
+          'rgb(255, 205, 86, 1)',
+          'rgb(75, 192, 192, 1)',
           'rgb(153, 102, 255, 1)',
           'rgb(201, 203, 207, 1)',
         ],
