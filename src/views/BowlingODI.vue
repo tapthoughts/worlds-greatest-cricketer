@@ -79,6 +79,24 @@
             />
       </div>
 
+      <div class="card">
+            <Chart
+            titleText="Catches Taken"
+            subTitleText="Lesser number of runs conceded symbolizes a good bowler"
+            chartType="bar"
+            :chartData="CatchesTakenData.data"
+            :chartOptions="CatchesTakenData.options"
+            :parentStyle="chartContainerStyle"
+            />
+            <Inference
+            inference="Though score of Ricky Ponting looks better but he bowled in only 25 overs
+                       & others bowled in atleast 300 overs. Neglecting him, 
+                       Sachin Tendulkar and Michael Bevan both wins"
+            winner="Sachin Tendulkar & Michael Bevan"
+            titleText="average runs conceded"
+            />
+      </div>
+
   </div>
 </template>
 
@@ -87,6 +105,7 @@ import Chart from '@/components/Chart.vue';
 import Inference from '@/components/Inference.vue';
 
 import locationBowlingODI from '../../json/locationbowlingODI.json';
+import locationBatODI from '../../json/locationbattingODI.json';
 
 export default {
   name: 'bowlingODI',
@@ -170,6 +189,15 @@ export default {
               barThickness: 50,
             }],
           },
+        },
+        data: {
+          labels: [],
+          datasets: [],
+        },
+      },
+      CatchesTakenData: {
+        options: {
+          responsive: true,
         },
         data: {
           labels: [],
@@ -354,6 +382,51 @@ export default {
           'rgb(75, 192, 192, 1)',
           'rgb(54, 162, 235, 1)',
           'rgb(153, 102, 255, 1)',
+          'rgb(201, 203, 207, 1)',
+        ],
+      }],
+    };
+
+    const catchesTakenData = [];
+    Object.values(locationBatODI).forEach((player) => {
+      catchesTakenData.push({
+        name: player.player_name,
+        catches_taken: player.details.total.catches_taken,
+      });
+    });
+    catchesTakenData.sort((t1, t2) => t2.catches_taken - t1.catches_taken);
+    this.CatchesTakenData.data = {
+      labels: catchesTakenData.map(t => t.name),
+      datasets: [{
+        label: 'Strike Rate',
+        data: catchesTakenData.map(t => t.catches_taken),
+        backgroundColor: [
+          'rgb(219, 242, 242, 0.5)',
+          'rgb(215, 236, 251, 0.5)',
+          'rgb(235, 224, 255, 0.5)',
+          'rgb(255, 224, 230, 0.5)',
+          'rgb(255, 226, 217, 0.5)',
+          'rgb(255, 245, 221, 0.5)',
+          'rgb(244, 245, 245, 0.5)',
+        ],
+        borderWidth: 0.8,
+        borderColor: [
+          'rgb(75, 192, 192, 1)',
+          'rgb(54, 162, 235, 1)',
+          'rgb(153, 102, 255, 1)',
+          'rgb(255, 99, 132, 1)',
+          'rgb(255, 159, 64, 1)',
+          'rgb(255, 205, 86, 1)',
+          'rgb(201, 203, 207, 1)',
+        ],
+        hoverBorderWidth: 1.2,
+        hoverBorderColor: [
+          'rgb(75, 192, 192, 1)',
+          'rgb(54, 162, 235, 1)',
+          'rgb(153, 102, 255, 1)',
+          'rgb(255, 99, 132, 1)',
+          'rgb(255, 159, 64, 1)',
+          'rgb(255, 205, 86, 1)',
           'rgb(201, 203, 207, 1)',
         ],
       }],
