@@ -67,10 +67,10 @@ export default {
     Object.values(locationBowlingODI).forEach((player) => {
       runsConcededData.push({
         name: player.player_name,
-        runs: player.details.total.runs_conceded,
+        runs: player.details.total.runs_conceded / player.details.total.overs,
       });
     });
-    runsConcededData.sort((t1, t2) => t2.runs - t1.runs);
+    runsConcededData.sort((t1, t2) => t1.runs - t2.runs);
     this.RunsConcededData.data = {
       labels: runsConcededData.map(t => t.name),
       datasets: [{
