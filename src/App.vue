@@ -102,6 +102,19 @@ export default {
     max-width: 100%;
 }
 
+.title-imp {
+  color: rgb(58,55,52);
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    margin-block-start: 0.42em;
+    margin-block-end: 0.42em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    max-width: 100%;
+}
+
 h1 {
     color: rgb(58,55,52);
     font-size: 25px;

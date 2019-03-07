@@ -1,6 +1,22 @@
 <template>
     <div class="batting-odi">
-        <el-tag class="tags"><b>Consistency of Player:</b> Average runs, Runs at Home VS Away matches & ICC Ranking </el-tag>
+
+        <div class="card center">
+          <span class="title-imp">Important factors in ODI format</span>
+          <hr>
+          <span class="result-ps">1. <b>Strike Rate</b> plays an important role in the 
+            One Day format since it is equally important to score big runs as well 
+            score them fast
+          </span>
+          <span class="result-ps">2. <b>Number of 6's and 4's</b> provide runs faster 
+            compared to non-boundaries and hence are prefferable when you have to score fast
+          </span>
+        </div>
+
+        <el-tag class="tags bottomtags">
+          <b>Consistency of Player:</b> 
+          Average runs, Runs at Home VS Away matches & ICC Ranking 
+        </el-tag>
         <div class="card">
             <Chart
             titleText="Average Runs Scored"
@@ -563,12 +579,12 @@ export default {
 
 <style scoped>
 .tags {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-size: 16px;
 }
 
 .bottomtags {
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .center {
