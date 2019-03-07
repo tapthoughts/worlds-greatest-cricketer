@@ -61,6 +61,24 @@
             />
         </div>
 
+        <div class="card">
+            <Chart
+            titleText="Awesomeness Rate"
+            subTitleText="Number of wickets taken for runs conceded in all matches"
+            chartType="bar"
+            :chartData="WicketsRunsConcededData.data"
+            :chartOptions="WicketsRunsConcededData.options"
+            :parentStyle="chartContainerStyle"
+            />
+            <Inference
+            inference="Though score of Ricky Ponting looks better but he bowled in only 25 overs
+                       & others bowled in atleast 300 overs. Neglecting him, 
+                       Sachin Tendulkar and Michael Bevan both wins"
+            winner="Sachin Tendulkar & Michael Bevan"
+            titleText="average runs conceded"
+            />
+      </div>
+
   </div>
 </template>
 
@@ -255,14 +273,14 @@ export default {
     Object.values(locationBowlingODI).forEach((player) => {
       maidenOverData.push({
         name: player.player_name,
-        maiden_overs: (player.details.total.maiden_overs / player.details.total.overs)*1000,
+        maiden_overs: (player.details.total.maiden_overs / player.details.total.overs)*100,
       });
     });
     maidenOverData.sort((t1, t2) => t2.maiden_overs - t1.maiden_overs);
     this.MaidenOverData.data = {
       labels: maidenOverData.map(t => t.name),
       datasets: [{
-        label: 'Average Maiden Overs',
+        label: 'Percentage of Average Maiden Overs',
         data: maidenOverData.map(t => t.maiden_overs),
         backgroundColor: [
           'rgb(255, 224, 230, 0.5)',
@@ -300,14 +318,14 @@ export default {
     Object.values(locationBowlingODI).forEach((player) => {
       wicketsRunsConcededData.push({
         name: player.player_name,
-        wickets: player.details.total.wickets / player.details.total.runs_conceded,
+        wickets: (player.details.total.wickets / player.details.total.runs_conceded)*100,
       });
     });
     wicketsRunsConcededData.sort((t1, t2) => t1.wickets - t2.wickets);
     this.WicketsRunsConcededData.data = {
       labels: wicketsRunsConcededData.map(t => t.name),
       datasets: [{
-        label: 'Avg Runs Conceded in all Matches',
+        label: 'Percentage of wickets taken for runs conceded',
         data: wicketsRunsConcededData.map(t => t.wickets),
         backgroundColor: [
           'rgb(255, 224, 230, 0.5)',
