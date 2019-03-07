@@ -1,6 +1,21 @@
 <template>
     <div class="batting-test">
-        <el-tag class="tags">
+
+        <div class="card center">
+          <span class="title-imp">Important factors in Test format</span>
+          <hr>
+          <span class="result-ps">1. <b>Conversion 50's into 100's</b> plays an important role in the 
+            Test cricket format since it is equally important to score big runs
+          </span>
+          <span class="result-ps">2. <b>Conversion 100's into 200's</b> plays an crucial role in 
+            Test cricket format since a double century will give you a powerful win
+          </span>
+          <span class="result-ps">3. <b>Number of 6's & 4's</b> provide runs faster 
+            compared to non-boundaries & hence are prefferable when you have to score big
+          </span>
+        </div>
+
+        <el-tag class="tags bottomtags">
           <b>Consistency of Player:</b> 
           Average runs, Runs at Home VS Away matches & ICC Ranking 
         </el-tag>
