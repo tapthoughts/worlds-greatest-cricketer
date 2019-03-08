@@ -4,6 +4,7 @@
         <div class="card center">
           <span class="title-imp">Important factors in Test format</span>
           <hr>
+          <br>
           <span class="result-ps">1. <b>Conversion 50's into 100's</b> plays an important role in the 
             Test cricket format since it is equally important to score big runs
           </span>

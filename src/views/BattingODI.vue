@@ -4,6 +4,7 @@
         <div class="card center">
           <span class="title-imp">Important factors in ODI format</span>
           <hr>
+          <br>
           <span class="result-ps">1. <b>Strike Rate</b> plays an important role in the 
             One Day format since it is equally important to score big runs as well 
             score them fast
