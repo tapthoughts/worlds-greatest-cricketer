@@ -5,7 +5,7 @@
       <h4 class="not-selected" style="font-weight: 300">{{player.details.home.runs_conceded}}</h4>
       <p class="card-text">
         Total Runs Scored: <span class="text-value">{{player.details.home.wickets}}</span>
-        <br />
+        <!-- <br /> -->
         <!-- Total Matches Played: <span class="text-value">{{Object.keys(player.matches).length}}</span>
         <br />
         Total Centuries Earned: <span class="text-value">{{player.centuries}}</span>
@@ -28,7 +28,7 @@ export default {
   name: 'PlayerDetailCard',
   props: ['person'],
   watch: {
-    batsman: {
+    player: {
       handler: function(newValue) {
         this.player = newValue;
         console.log(this.player)
