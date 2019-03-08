@@ -2,6 +2,7 @@
   <div class="bowling-odi">
 
     <div class="card">
+            <PlayerDetailsCard :person="focusedPlayer" />
             <Chart
             titleText="Economy Rate"
             subTitleText="Lesser number of runs conceded symbolizes a good bowler"
@@ -10,7 +11,6 @@
             :chartOptions="EconomyRateData.options"
             :parentStyle="chartContainerStyle"
             />
-            <PlayerDetailsCard :person="focusedPlayer" />
             <Inference
             inference="Though score of Ricky Ponting looks better but he bowled in only 25 overs
                        & others bowled in atleast 300 overs. Neglecting him, 

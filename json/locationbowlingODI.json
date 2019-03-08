@@ -2,6 +2,14 @@
     {
         "player_name" : "Sachin Tendulkar",
         "player_Id": "1",
+        "info" : {
+            "dob" : "April 24, 1973",
+            "nationality" : "India",
+            "batting_style" : "Right Handed",
+            "bowling_style" : "Off Break",
+            "test_career_span" : "1989 - 2013",
+            "odi_career_span" : "1989 - 2012"
+        },
         "details" : {
             "away" : {
                 "innings": 77,
