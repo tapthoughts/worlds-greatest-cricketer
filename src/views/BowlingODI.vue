@@ -10,6 +10,7 @@
             :chartOptions="EconomyRateData.options"
             :parentStyle="chartContainerStyle"
             />
+            <PlayerDetailsCard :person="focusedPlayer" />
             <Inference
             inference="Though score of Ricky Ponting looks better but he bowled in only 25 overs
                        & others bowled in atleast 300 overs. Neglecting him, 
@@ -103,6 +104,7 @@
 <script>
 import Chart from '@/components/Chart.vue';
 import Inference from '@/components/Inference.vue';
+import PlayerDetailsCard from '@/components/PlayerDetailsCard.vue';
 
 import locationBowlingODI from '../../json/locationbowlingODI.json';
 import locationBatODI from '../../json/locationbattingODI.json';
@@ -112,6 +114,7 @@ export default {
   components: {
     Chart,
     Inference,
+    PlayerDetailsCard
   },
   data() {
     return {
@@ -136,6 +139,11 @@ export default {
               barThickness: 50,
             }],
           },
+          onClick: (evt, item) => {
+            if (item && item[0] && item[0]._index != null) {
+              this.focusedPlayer = locationBowlingODI[item[0]._index];
+            }
+          }
         },
         data: {
           labels: [],
@@ -204,6 +212,7 @@ export default {
           datasets: [],
         },
       },
+      focusedPlayer: null
     }
   },
   mounted() {
