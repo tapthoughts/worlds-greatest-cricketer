@@ -35,10 +35,6 @@ export default {
         label: player.info.name,
         color: playerColor[key],
         children: [
-          {
-            label: "Test Matches",
-            color: "#3584BB",
-            children: [
               {
                 label: "Batting Performance",
                 color: "#41A941",
@@ -78,52 +74,6 @@ export default {
                 ]
               }
             ]
-          },
-          {
-            label: "ODI Matches",
-            color: "#FF8C26",
-            children: [
-              {
-                label: "Batting Performance",
-                color: "#41A941",
-                children: [
-                  {
-                    label: "Boundaries",
-                    color: "#9E76C3",
-                    children: [
-                      {
-                        label: "Fours",
-                        color: "#8C8C8C",
-                        size: 300
-                      },
-                      {
-                        label: "Sixes",
-                        color: "#97675D",
-                        size: 1254
-                      }
-                    ]
-                  },
-                  {
-                    label: "Non-Boundaries",
-                    color: "#DA3D3D",
-                    size: 55
-                  }
-                ]
-              },
-              {
-                label: "Bowling Performance",
-                color: "#97675D",
-                children: [
-                  {
-                    label: "Runs conceded",
-                    color: "#FF8C26",
-                    size: 12
-                  }
-                ]
-              }
-            ]
-          }
-        ]
       })
     });
   }
