@@ -17,7 +17,7 @@
       </p>
     </div>
     <div class="info-card" v-else>
-      <p class="not-selected">
+      <p class="card-heading">
         Click any player bar <br> to view his details.
       </p>
     </div>
