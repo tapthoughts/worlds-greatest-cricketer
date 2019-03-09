@@ -57,7 +57,7 @@
       <div class="card">
             <Chart
             titleText="Average Maiden Overs"
-            subTitleText="Bowling a maiden over in ODI is very important and difficult."
+            subTitleText="Bowling a maiden over in ODI is very important and difficult"
             chartType="bar"
             :chartData="MaidenOverData.data"
             :chartOptions="MaidenOverData.options"
@@ -125,7 +125,7 @@
             <br>
             But, Sachin Tendulkar is second in all factors & hence the winner.
           </span>
-        </div>
+      </div>
 
   </div>
 </template>

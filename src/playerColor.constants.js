@@ -1,5 +1,4 @@
 export const PLAYER_COLOR = [
-    '',
     '#C7A9F9',
     '#F2C5A6',
     '#E9B1F0',
