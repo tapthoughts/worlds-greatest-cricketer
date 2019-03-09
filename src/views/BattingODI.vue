@@ -19,6 +19,7 @@
           Average runs, Runs at Home VS Away matches & ICC Ranking 
         </el-tag>
         <div class="card">
+            <PlayerDetailsCard :person="focusedPlayerBatting" />
             <Chart
             titleText="Average Runs Scored"
             subTitleText="A good average score of all matches is what makes a player dependable"
@@ -28,8 +29,6 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Clearly, Michael Bevan rules the average turf. Sachin Tendulkar and
-                       Sir Viv Richards are nearly equal."
             winner="Michael Bevan"
             titleText="average runs scored"
             />
@@ -58,7 +57,7 @@
               width="200"
               trigger="hover"
               content="Score of a player when he scores in the country of his nationality">
-              <el-button slot="reference">Home Score</el-button>
+              <el-button slot="reference">Define Home Score</el-button>
             </el-popover>
             <el-popover
               placement="top-start"
@@ -66,7 +65,7 @@
               width="200"
               trigger="hover"
               content="Score of a player when he scores in the country in whose oppsition he's playing">
-              <el-button slot="reference">Away Score</el-button>
+              <el-button slot="reference">Define Away Score</el-button>
             </el-popover>
         </div>
 
@@ -101,9 +100,7 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Only Sachin Tendulkar is the player made a double century in ODI. He is somewhat
-                       likely to convert that 100 into 200 whereas, other player don't even dream such
-                       highs."
+            inference="Only Sachin Tendulkar is the player made a double century in ODI."
             winner="Sachin Tendulkar"
             titleText="scoring big runs"
             />
@@ -119,7 +116,6 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Sachin Tendulkar has the higher percentage of winning contribution than the rest."
             winner="Sachin Tendulkar"
             titleText="being winning contributor maximum times"
             />
@@ -137,7 +133,6 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Both, Sachin Tendulkar and Sir Viv Richards have similarly high batting strike rate."
             winner="both Sir Viv Richards & Sachin Tendulkar"
             titleText="having high strike rate"
             />
@@ -149,7 +144,7 @@
               trigger="hover"
               content="Batting strike rate is a measure of how frequently a batsman achieves the primary
                        goal of batting, namely scoring runs">
-              <el-button slot="reference">Strike rate</el-button>
+              <el-button slot="reference">Define Strike rate</el-button>
             </el-popover>
         </div>
 
@@ -173,6 +168,12 @@
         <div class="card center">
           <h1>The ODI verdict - Batting</h1>
           <span class="result"> Sachin Tendulkar Wins !! </span>
+          <span class="result-ps"> 
+            Maximum number of wins in individual components is by Sachin Tendulkar.
+            <br>
+            Also, he's the one to win in Strike rate and other important factors of 
+            ODI batting.
+          </span>
         </div>
 
     </div>
@@ -181,6 +182,7 @@
 <script>
 import Chart from '@/components/Chart.vue';
 import Inference from '@/components/Inference.vue';
+import PlayerDetailsCard from '@/components/PlayerDetailsCard.vue';
 
 import location_bat_odi from '../../json/locationbattingODI.json';
 
@@ -189,6 +191,7 @@ export default {
   components: {
     Chart,
     Inference,
+    PlayerDetailsCard,
   },
   data() {
     return {
@@ -213,6 +216,11 @@ export default {
               barThickness: 50,
             }],
           },
+          onClick: (evt, item) => {
+            if (item && item[0] && item[0]._index != null) {
+              this.focusedPlayerBatting = location_bat_odi[item[0]._index];
+            }
+          }
         },
         data: {
           labels: [],
@@ -310,6 +318,7 @@ export default {
           datasets: [],
         },
       },
+      focusedPlayerBatting: null
     };
   },
   mounted() {

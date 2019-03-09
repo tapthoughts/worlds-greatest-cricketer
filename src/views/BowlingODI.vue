@@ -4,15 +4,14 @@
       <div class="card">
             <PlayerDetailsCard :person="focusedPlayer" />
             <Chart
-            titleText="Strike Rate"
-            subTitleText="Scoring runs faster in ODI is primary target"
+            titleText="Bowling Strike Rate"
+            subTitleText="Getting batsman out faster is primary target"
             chartType="bar"
             :chartData="StrikeRateData.data"
             :chartOptions="StrikeRateData.options"
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Both, Sachin Tendulkar and Sir Viv Richards have similarly high batting strike rate."
             winner="both Sir Viv Richards & Sachin Tendulkar"
             titleText="having high strike rate"
             />
@@ -22,8 +21,8 @@
               title="Strike Rate"
               width="200"
               trigger="hover"
-              content="Batting strike rate is a measure of how frequently a batsman achieves the primary
-                       goal of batting, namely scoring runs">
+              content="Bowling strike rate is a measure of how frequently a 
+                       bowler achieves the primary goal of bowling, namely taking wickets ">
               <el-button slot="reference">Define Strike rate</el-button>
             </el-popover>
         </div>

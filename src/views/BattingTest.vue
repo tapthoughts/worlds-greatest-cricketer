@@ -30,8 +30,6 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Clearly, Sir Don Bradman rules the average turf. Sachin Tendulkar and Gary
-                       Sobers are nearly equal."
             winner="Sir Don Bradman"
             titleText="average runs scored"
             />
@@ -47,8 +45,6 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Sir Don Bradman outperforms every other player by a significant margin no
-                       matter whatever the conditions be."
             winner="Sir Don Bradman"
             titleText="scoring under pressure"
             />
@@ -59,7 +55,7 @@
               width="200"
               trigger="hover"
               content="Score of a player when he scores in the country of his nationality">
-              <el-button slot="reference">Home Score</el-button>
+              <el-button slot="reference">Define Home Score</el-button>
             </el-popover>
             <el-popover
               placement="top-start"
@@ -68,7 +64,7 @@
               trigger="hover"
               content="Score of a player when he scores in the country in whose oppsition 
                         he's playing">
-              <el-button slot="reference">Away Score</el-button>
+              <el-button slot="reference">Define Away Score</el-button>
             </el-popover>
         </div>
 
@@ -106,9 +102,6 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="According to the graph, Sir Don Bradman has most number of 
-                       double centuries but considering small number of matches played 
-                       with comparision to Sachin Tendulkar, I think he's the winner."
             winner="Sachin Tendulkar"
             titleText="scoring big runs"
             />
@@ -125,8 +118,6 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Sachin Tendulkar has the higher percentage of winning contribution than 
-                       the rest."
             winner="Sachin Tendulkar"
             titleText="being winning contributor maximum times"
             />
@@ -146,8 +137,6 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Sir Viv Richards have relatively high batting strike rate when compared with
-                       any other player."
             winner="Sir Viv Richards"
             titleText="having high strike rate"
             />
@@ -159,7 +148,7 @@
               trigger="hover"
               content="Batting strike rate is a measure of how frequently a batsman achieves the
                        primary goal of batting, namely scoring runs">
-              <el-button slot="reference">Strike rate</el-button>
+              <el-button slot="reference">Define Strike rate</el-button>
             </el-popover>
         </div>
 
@@ -174,8 +163,6 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Sachin Tendulkar likes to send the balls out of the ground, scoring most of
-                       his runs with 4's & 6's"
             winner="Sachin Tendulkar"
             titleText="hitting most boundaries"
             />
@@ -184,9 +171,12 @@
         <div class="card center">
           <h1>The Test verdict - Batting</h1>
           <span class="result"> Sachin Tendulkar Wins !! </span>
-          <!-- <span class="result-ps"> PS: Sir Donald Bradman is greatest batsman 
-            to be known but considering the career span and facing of all-time fastest
-            bowlers by Sachin Tendulkar, he wins atleast in my personal view. </span> -->
+          <span class="result-ps"> 
+            Maximum number of wins in individual components is by Sachin Tendulkar.
+            <br>
+            Also, he's the one to win in all important factors of 
+            Test cricket batting.
+          </span>
         </div>
 
     </div>

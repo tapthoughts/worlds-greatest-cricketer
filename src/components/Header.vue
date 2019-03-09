@@ -8,7 +8,8 @@
 <style>
 .header {
     background: #fff;
-    color: #5A5754;
+    color: rgb(58,55,52);
     text-align: center;
+    margin-top: -10px;
 }
 </style>

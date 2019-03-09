@@ -55,8 +55,9 @@ export default {
     color: rgb(58,55,52);
     transition: .3s;
     padding: 10px;
-    width: 24%;
+    width: 25%;
     margin-bottom: -140px;
+    height: 150px;
   }
 
   .player-details-card {
