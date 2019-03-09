@@ -6,7 +6,6 @@
        Who rules the cricket pitch across the globe for ODI, Test and T20?
      </p>
     </blockquote>
-    <!-- <router-link to="/about">About</router-link> -->
   </div>
 </template>
 

@@ -26,9 +26,9 @@
                 <el-menu-item @click="routeBowlingTest()" index="1-4">Test</el-menu-item>
             </el-menu-item-group>
             </el-submenu>
-            <el-menu-item @click="routeAbout()" index="4">
+            <el-menu-item @click="routeConclusion()" index="4">
             <i class="el-icon-tickets"></i>
-            <span>About</span>
+            <span>Conclusion</span>
             </el-menu-item>
         </el-menu>
     </div>
@@ -59,8 +59,8 @@ export default {
     routeBowlingTest() {
       this.$router.push({ path: 'bowlingTest' });
     },
-    routeAbout() {
-      this.$router.push({ path: 'about' });
+    routeConclusion() {
+      this.$router.push({ path: 'conclusion' });
     },
   },
 };
