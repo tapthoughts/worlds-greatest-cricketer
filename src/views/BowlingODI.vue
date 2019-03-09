@@ -1,26 +1,8 @@
 <template>
   <div class="bowling-odi">
 
-    <div class="card">
-            <PlayerDetailsCard :person="focusedPlayer" />
-            <Chart
-            titleText="Economy Rate"
-            subTitleText="Lesser number of runs conceded symbolizes a good bowler"
-            chartType="bar"
-            :chartData="EconomyRateData.data"
-            :chartOptions="EconomyRateData.options"
-            :parentStyle="chartContainerStyle"
-            />
-            <Inference
-            inference="Though score of Ricky Ponting looks better but he bowled in only 25 overs
-                       & others bowled in atleast 300 overs. Neglecting him, 
-                       Sachin Tendulkar and Michael Bevan both wins"
-            winner="Sachin Tendulkar & Michael Bevan"
-            titleText="average runs conceded"
-            />
-      </div>
-
       <div class="card">
+            <PlayerDetailsCard :person="focusedPlayer" />
             <Chart
             titleText="Strike Rate"
             subTitleText="Scoring runs faster in ODI is primary target"
@@ -46,7 +28,25 @@
             </el-popover>
         </div>
 
-        <div class="card">
+      <div class="card">
+            <Chart
+            titleText="Economy Rate"
+            subTitleText="Lesser number of runs conceded symbolizes a good bowler"
+            chartType="bar"
+            :chartData="EconomyRateData.data"
+            :chartOptions="EconomyRateData.options"
+            :parentStyle="chartContainerStyle"
+            />
+            <Inference
+            inference="Though score of Ricky Ponting looks better but he bowled in only 25 overs
+                       & others bowled in atleast 300 overs. Neglecting him, 
+                       Sachin Tendulkar and Michael Bevan both wins"
+            winner="Sachin Tendulkar & Michael Bevan"
+            titleText="average runs conceded"
+            />
+      </div>
+
+      <div class="card">
             <Chart
             titleText="Average Maiden Overs"
             subTitleText="Most number of Man of the Match Awards determine your winning contribution"
@@ -139,11 +139,6 @@ export default {
               barThickness: 50,
             }],
           },
-          onClick: (evt, item) => {
-            if (item && item[0] && item[0]._index != null) {
-              this.focusedPlayer = locationBowlingODI[item[0]._index];
-            }
-          }
         },
         data: {
           labels: [],
@@ -153,6 +148,11 @@ export default {
       StrikeRateData: {
         options: {
           responsive: true,
+          onClick: (evt, item) => {
+            if (item && item[0] && item[0]._index != null) {
+              this.focusedPlayer = locationBowlingODI[item[0]._index];
+            }
+          }
         },
         data: {
           labels: [],
