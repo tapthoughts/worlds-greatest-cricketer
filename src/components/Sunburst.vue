@@ -46,19 +46,19 @@ export default {
                       {
                         label: "Fours",
                         color: "#8C8C8C",
-                        size: 100
+                        size: player.cricket.batting.fours
                       },
                       {
                         label: "Sixes",
                         color: "#97675D",
-                        size: 30
+                        size: player.cricket.batting.sixes
                       }
                     ]
                   },
                   {
                     label: "Non-Boundaries",
                     color: "#DA3D3D",
-                    size: 123
+                    size: player.cricket.batting.non_boundaries
                   }
                 ]
               },
@@ -69,7 +69,7 @@ export default {
                   {
                     label: "Runs conceded",
                     color: "#FF8C26",
-                    size: 12
+                    size: player.cricket.bowling.runs_conceded
                   }
                 ]
               }

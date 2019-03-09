@@ -15,16 +15,16 @@
             <i>
             <ul>
               <li>
-                <p>Mumbai Indians scored 6128 single runs which was highest of all.</p>
+                <p>Sachin Tendulkar scored 34,347 single runs which is highest of all.</p>
               </li>
               <li>
-                <p>Royal Challengers Bangalore took highest number of sixes, 855!</p>
+                <p>Again, Sachin Tendulkar took highest number of sixes, 264!</p>
               </li>
               <li>
-                <p>In terms of Bowling, RCB conceded the most (1060) extra runs and they still managed to score above among top 3.</p>
+                <p>In terms of Bowling, Brian Lara conceded least number of runs, 89.</p>
               </li>
               <li>
-                <p>Rajasthan Royals scored maximum amount of threes, 63.</p>
+                <p>Michael Bevan made least number of boundaries, (Only 22% of his score).</p>
               </li>
             </ul>
             </i>
