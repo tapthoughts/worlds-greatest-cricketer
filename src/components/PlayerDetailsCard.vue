@@ -4,15 +4,16 @@
       <span class="card-heading">
           {{player.player_name}}
       </span>
-      <h4>{{player.details.info.nationality}}</h4>
       <p class="card-text">
-        Total Runs Scored: <span class="text-value">{{player.details.info.nationality}}</span>
+        Nationality: <span class="text-value">{{player.info.nationality}}</span>
         <br>
-        Total Runs Scored: <span class="text-value">{{player.details.info.nationality}}</span>
+        Batting Style: <span class="text-value">{{player.info.batting_style}}</span> 
         <br>
-        Total Runs Scored: <span class="text-value">{{player.details.info.nationality}}</span>
+        Bowling Style: <span class="text-value">{{player.info.bowling_style}}</span>
         <br>
-        Total Runs Scored: <span class="text-value">{{player.details.info.nationality}}</span>
+        Test career span: <span class="text-value">{{player.info.test_career_span}}</span>
+        <br>
+        ODI career span: <span class="text-value">{{player.info.odi_career_span}}</span>
       </p>
     </div>
     <div class="info-card" v-else>
@@ -55,13 +56,28 @@ export default {
     transition: .3s;
     padding: 10px;
     width: 24%;
-    margin-bottom: -150px;
+    margin-bottom: -140px;
   }
 
   .player-details-card {
     width: 100%;
     display: block;
     float: right;
-    padding: 10px;
+  }
+
+  .card-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(58,55,52);
+  }
+
+  .card-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(58,55,52);
+  }
+
+  .text-value {
+    font-size: 15px;
   }
 </style>

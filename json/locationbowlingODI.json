@@ -1,5 +1,203 @@
 [
     {
+        "player_name" : "Ricky Ponting",
+        "player_Id": "4",
+        "info" : {
+            "dob" : "December 19, 1974 ",
+            "nationality" : "Australia",
+            "batting_style" : "Right Handed",
+            "bowling_style" : "Right-arm medium",
+            "test_career_span" : "1995 - 2012",
+            "odi_career_span" : "1995 - 2012"
+        },
+        "details" : {
+            "away" : {
+                "innings": 2,
+                "overs": 5,
+                "maiden_overs": 0,
+                "runs_conceded": 23,
+                "wickets": 0,
+                "Best": "0/2 v SL",
+                "3w": 0,
+                "5w": 0,
+                "avg": "-",
+                "economy_rate": 4.6,
+                "strike_rate": "-"
+            },
+            "home" : {
+                "innings": 3,
+                "overs": 20,
+                "maiden_overs": 0,
+                "runs_conceded": 81,
+                "wickets": 3,
+                "Best": "1/12 v ZIM",
+                "3w": 0,
+                "5w": 0,
+                "avg": 27,
+                "economy_rate": 4.05,
+                "strike_rate": 40
+            },
+            "neutral" : {
+                "innings": 5,
+                "overs": 25,
+                "maiden_overs": 0,
+                "runs_conceded": 104,
+                "wickets": 3,
+                "Best": "1/1 v ZIM",
+                "3w": 0,
+                "5w": 0,
+                "avg": 13.5,
+                "economy_rate": 4.33,
+                "strike_rate": 20
+            },
+            "total" : {
+                "innings": 5,
+                "overs": 25,
+                "maiden_overs": 0,
+                "runs_conceded": 104,
+                "wickets": 3,
+                "Best": "1/1 v ZIM",
+                "3w": 0,
+                "5w": 0,
+                "avg": 13.5,
+                "economy_rate": 4.33,
+                "strike_rate": 20
+            }
+        }
+    },
+    {
+        "player_name" : "Sir Viv Richards",
+        "player_Id": "2",
+        "info" : {
+            "dob" : "March 7, 1952",
+            "nationality" : "West Indies",
+            "batting_style" : "Right Handed",
+            "bowling_style" : "Right-arm medium",
+            "test_career_span" : "1974 - 1991",
+            "odi_career_span" : "1975 - 1991"
+        },
+        "details" : {
+            "away" : {
+                "innings": 64,
+                "overs": 349,
+                "maiden_overs": 10,
+                "runs_conceded": 2100,
+                "wickets": 67,
+                "Best": "6/41 v IND",
+                "3w": 4,
+                "5w": 2,
+                "avg": 31.34,
+                "economy_rate": 4.51,
+                "strike_rate": 41.67
+            },
+            "home" : {
+                "innings": 19,
+                "overs": 141,
+                "maiden_overs": 8,
+                "runs_conceded": 590,
+                "wickets": 17,
+                "Best": "4/42 v IND",
+                "3w": 2,
+                "5w": 0,
+                "avg": 34.7,
+                "economy_rate": 4.18,
+                "strike_rate": 49.76
+            },
+            "neutral" : {
+                "innings": 48,
+                "overs": 334.2,
+                "maiden_overs": 8,
+                "runs_conceded": 1538,
+                "wickets": 34,
+                "Best": "3/27 v SL",
+                "3w": 4,
+                "5w": 0,
+                "avg": 45.23,
+                "economy_rate": 4.6,
+                "strike_rate": 59
+            },
+            "total" : {
+                "innings": 131,
+                "overs": 824.2,
+                "maiden_overs": 26,
+                "runs_conceded": 4228,
+                "wickets": 118,
+                "Best": "6/6 v IND",
+                "3w": 10,
+                "5w": 2,
+                "avg": 37.09,
+                "economy_rate": 4.43,
+                "strike_rate": 50.14
+            }
+        }
+    },
+    {
+        "player_name" : "Michael Bevan",
+        "player_Id": "3",
+        "info" : {
+            "dob" : "May 8, 1970",
+            "nationality" : "Australia",
+            "batting_style" : "Right Handed",
+            "bowling_style" : "Slow left-arm orthodox",
+            "test_career_span" : "1994 - 1998",
+            "odi_career_span" : "1994 - 2004"
+        },
+        "details" : {
+            "away" : {
+                "innings": 22,
+                "overs": 117.2,
+                "maiden_overs": 1,
+                "runs_conceded": 648,
+                "wickets": 10,
+                "Best": "3/36 v PAK",
+                "3w": 1,
+                "5w": 0,
+                "avg": 64.8,
+                "economy_rate": 5.52,
+                "strike_rate": 70.4
+            },
+            "home" : {
+                "innings": 29,
+                "overs": 147.2,
+                "maiden_overs": 1,
+                "runs_conceded": 693,
+                "wickets": 20,
+                "Best": "3/36 v PAK",
+                "3w": 1,
+                "5w": 0,
+                "avg": 34.65,
+                "economy_rate": 4.7,
+                "strike_rate": 44.2
+            },
+            "neutral" : {
+                "innings": 16,
+                "overs": 63,
+                "maiden_overs": 2,
+                "runs_conceded": 314,
+                "wickets": 6,
+                "Best": "2/9 v ENG",
+                "3w": 0,
+                "5w": 0,
+                "avg": 52.33,
+                "economy_rate": 4.98,
+                "strike_rate": 63
+            },
+            "total" : {
+                "innings": 67,
+                "overs": 327.4,
+                "maiden_overs": 4,
+                "runs_conceded": 1655,
+                "wickets": 36,
+                "Best": "3/3 v PAK",
+                "3w": 2,
+                "5w": 0,
+                "avg": 50.59,
+                "economy_rate": 5.07,
+                "strike_rate": 59.2
+            }
+        }
+    },
+    {
         "player_name" : "Sachin Tendulkar",
         "player_Id": "1",
         "info" : {
@@ -66,182 +264,16 @@
         }
     },
     {
-        "player_name" : "Sir Viv Richards",
-        "player_Id": "2",
-        "details" : {
-            "away" : {
-                "innings": 64,
-                "overs": 349,
-                "maiden_overs": 10,
-                "runs_conceded": 2100,
-                "wickets": 67,
-                "Best": "6/41 v IND",
-                "3w": 4,
-                "5w": 2,
-                "avg": 31.34,
-                "economy_rate": 4.51,
-                "strike_rate": 41.67
-            },
-            "home" : {
-                "innings": 19,
-                "overs": 141,
-                "maiden_overs": 8,
-                "runs_conceded": 590,
-                "wickets": 17,
-                "Best": "4/42 v IND",
-                "3w": 2,
-                "5w": 0,
-                "avg": 34.7,
-                "economy_rate": 4.18,
-                "strike_rate": 49.76
-            },
-            "neutral" : {
-                "innings": 48,
-                "overs": 334.2,
-                "maiden_overs": 8,
-                "runs_conceded": 1538,
-                "wickets": 34,
-                "Best": "3/27 v SL",
-                "3w": 4,
-                "5w": 0,
-                "avg": 45.23,
-                "economy_rate": 4.6,
-                "strike_rate": 59
-            },
-            "total" : {
-                "innings": 131,
-                "overs": 824.2,
-                "maiden_overs": 26,
-                "runs_conceded": 4228,
-                "wickets": 118,
-                "Best": "6/6 v IND",
-                "3w": 10,
-                "5w": 2,
-                "avg": 37.09,
-                "economy_rate": 4.43,
-                "strike_rate": 50.14
-            }
-        }
-    },
-    {
-        "player_name" : "Michael Bevan",
-        "player_Id": "3",
-        "details" : {
-            "away" : {
-                "innings": 22,
-                "overs": 117.2,
-                "maiden_overs": 1,
-                "runs_conceded": 648,
-                "wickets": 10,
-                "Best": "3/36 v PAK",
-                "3w": 1,
-                "5w": 0,
-                "avg": 64.8,
-                "economy_rate": 5.52,
-                "strike_rate": 70.4
-            },
-            "home" : {
-                "innings": 29,
-                "overs": 147.2,
-                "maiden_overs": 1,
-                "runs_conceded": 693,
-                "wickets": 20,
-                "Best": "3/36 v PAK",
-                "3w": 1,
-                "5w": 0,
-                "avg": 34.65,
-                "economy_rate": 4.7,
-                "strike_rate": 44.2
-            },
-            "neutral" : {
-                "innings": 16,
-                "overs": 63,
-                "maiden_overs": 2,
-                "runs_conceded": 314,
-                "wickets": 6,
-                "Best": "2/9 v ENG",
-                "3w": 0,
-                "5w": 0,
-                "avg": 52.33,
-                "economy_rate": 4.98,
-                "strike_rate": 63
-            },
-            "total" : {
-                "innings": 67,
-                "overs": 327.4,
-                "maiden_overs": 4,
-                "runs_conceded": 1655,
-                "wickets": 36,
-                "Best": "3/3 v PAK",
-                "3w": 2,
-                "5w": 0,
-                "avg": 50.59,
-                "economy_rate": 5.07,
-                "strike_rate": 59.2
-            }
-        }
-    },
-    {
-        "player_name" : "Ricky Ponting",
-        "player_Id": "4",
-        "details" : {
-            "away" : {
-                "innings": 2,
-                "overs": 5,
-                "maiden_overs": 0,
-                "runs_conceded": 23,
-                "wickets": 0,
-                "Best": "0/2 v SL",
-                "3w": 0,
-                "5w": 0,
-                "avg": "-",
-                "economy_rate": 4.6,
-                "strike_rate": "-"
-            },
-            "home" : {
-                "innings": 3,
-                "overs": 20,
-                "maiden_overs": 0,
-                "runs_conceded": 81,
-                "wickets": 3,
-                "Best": "1/12 v ZIM",
-                "3w": 0,
-                "5w": 0,
-                "avg": 27,
-                "economy_rate": 4.05,
-                "strike_rate": 40
-            },
-            "neutral" : {
-                "innings": 5,
-                "overs": 25,
-                "maiden_overs": 0,
-                "runs_conceded": 104,
-                "wickets": 3,
-                "Best": "1/1 v ZIM",
-                "3w": 0,
-                "5w": 0,
-                "avg": 13.5,
-                "economy_rate": 4.33,
-                "strike_rate": 20
-            },
-            "total" : {
-                "innings": 5,
-                "overs": 25,
-                "maiden_overs": 0,
-                "runs_conceded": 104,
-                "wickets": 3,
-                "Best": "1/1 v ZIM",
-                "3w": 0,
-                "5w": 0,
-                "avg": 13.5,
-                "economy_rate": 4.33,
-                "strike_rate": 20
-            }
-        }
-    },
-    {
         "player_name" : "Brian Lara",
         "player_Id": "5",
+        "info" : {
+            "dob" : "May 2, 1969 ",
+            "nationality" : "West Indies",
+            "batting_style" : "Left Handed",
+            "bowling_style" : "Leg Break",
+            "test_career_span" : "1990 - 2006",
+            "odi_career_span" : "1990 - 2007"
+        },
         "details" : {
             "away" : {
                 "innings": 1,
