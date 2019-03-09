@@ -5,61 +5,52 @@
         titleText="Overall Performance"
         subTitleText="Let's see overall performance of all players before our final conclusion"
       />
-      <div class="sunburst-hierarchy">
-          <button @click="showTreeView = !showTreeView" class="tog-btn">{{!showTreeView ? 'Open Chart Info':'Close View'}}</button>
-          <div class="anytihng" v-if="showTreeView">
-            <SunburstHierarchy />
-          </div>
-          <div class="sunburst-observation-text">
-            <h3 style="margin-left: 20px">Some Observations</h3>
-            <i>
+      <div class="sunburst-observation-text">
+            <h3 style="margin-left: 20px">Observations</h3>
             <ul>
               <li>
                 <p>Sachin Tendulkar scored 34,347 single runs which is highest of all.</p>
               </li>
               <li>
-                <p>Again, Sachin Tendulkar took highest number of sixes, 264!</p>
-              </li>
-              <li>
-                <p>In terms of Bowling, Brian Lara conceded least number of runs, 89.</p>
-              </li>
-              <li>
-                <p>Michael Bevan made least number of boundaries, (Only 22% of his score).</p>
+                <p>Again, Sachin Tendulkar took highest number of sixes and fours that are 264 & 4,074 respectively!</p>
               </li>
             </ul>
-            </i>
           </div>
-        </div>
+      </div>
+      <div class="card center">
+          <h1 class="medium">Conclusion</h1>
+          <span class="result large"> Sachin Tendulkar Wins !! </span>
+          <span class="result "> 
+            By winning the battle in batting areas of both ODI and Test cricket
+            <br>
+            as well as bowling in ODI, he proves the statement by 
+            <a href="https://en.wikipedia.org/wiki/Sachin_Tendulkar"> wikipedia</a> 
+            <br>
+            He can truly be regarded as one of the world's greatest cricketer.
+          </span>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
 import Sunburst from '@/components/Sunburst.vue';
-import SunburstHierarchy from '@/components/SunburstHierarchy.vue';
 
 export default {
   name: 'conclusion',
-  components: { 
-    Sunburst,
-    SunburstHierarchy
-  },
-  data () {
-    return {
-      showTreeView: false
-    }
-  }
+  components: { Sunburst }
 };
 </script>
 
-<style>
-.conclusion {
-  /* height: 700px; */
+<style scoped>
+.sunburst-observation-text {
+  margin-top: 100px;
 }
 
-.sunburst-hierarchy {
-  margin-top: 200px;
+.large {
+  font-size: 75px;
 }
 
+.medium {
+  font-size: 40px;
+}
 </style>
