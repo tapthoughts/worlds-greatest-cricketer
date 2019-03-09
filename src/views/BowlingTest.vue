@@ -2,6 +2,8 @@
   <div class="bowling-odi">
 
           <div class="card">
+
+            <PlayerDetailsCard :person="focusedPlayerBowlingTest" />
             <Chart
             titleText="Strike Rate"
             subTitleText="Getting batsman out faster is primary target"
@@ -130,6 +132,7 @@
 <script>
 import Chart from '@/components/Chart.vue';
 import Inference from '@/components/Inference.vue';
+import PlayerDetailsCard from '@/components/PlayerDetailsCard.vue';
 
 import locationBowlingTest from '../../json/locationbowlingTest.json';
 import locationBatTest from '../../json/locationbattingTest.json';
@@ -139,6 +142,7 @@ export default {
   components: {
     Chart,
     Inference,
+    PlayerDetailsCard,
   },
   data() {
     return {
@@ -172,6 +176,24 @@ export default {
       StrikeRateData: {
         options: {
           responsive: true,
+          scales: {
+            xAxes: [{
+              ticks: {
+                beginAtZero: true,
+                maxRotation: 0,
+                minRotation: 0,
+              },
+              gridLines: {
+                offsetGridLines: true,
+              },
+              barThickness: 50,
+            }],
+          },
+          onClick: (evt, item) => {
+            if (item && item[0] && item[0]._index != null) {
+              this.focusedPlayerBowlingTest = locationBowlingTest[item[0]._index];
+            }
+          }
         },
         data: {
           labels: [],
@@ -231,6 +253,7 @@ export default {
           datasets: [],
         },
       },
+      focusedPlayerBowlingTest: null
     }
   },
   mounted() {

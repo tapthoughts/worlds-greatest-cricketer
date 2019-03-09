@@ -1,50 +1,15 @@
 [
     {
-        "player_name": "Sachin Tendulkar",
-        "details": {
-            "away": {
-                "innings": 78,
-                "overs": 371.2,
-                "maiden_overs": 37,
-                "runs_conceded": 1392,
-                "wickets": 30,
-                "Best": "2/7 v NZ",
-                "3w": 0,
-                "5w": 0,
-                "avg": 46.4,
-                "economy_rate": 3.74,
-                "strike_rate": 74.26
-            },
-            "home": {
-                "innings": 67,
-                "overs": 335.2,
-                "maiden_overs": 46,
-                "runs_conceded": 1100,
-                "wickets": 16,
-                "Best": "3/10 v SA",
-                "3w": 2,
-                "5w": 0,
-                "avg": 68.75,
-                "economy_rate": 3.28,
-                "strike_rate": 125.75
-            },
-            "total": {
-                "innings": 145,
-                "overs": 706.4,
-                "maiden_overs": 83,
-                "runs_conceded": 2492,
-                "wickets": 46,
-                "Best": "3/3 v SA",
-                "3w": 2,
-                "5w": 0,
-                "avg": 57.58,
-                "economy_rate": 3.51,
-                "strike_rate": 100.01
-            }
-        }
-    },
-    {
         "player_name": "Sir Viv Richards",
+        "player_Id": "2",
+        "info" : {
+            "dob" : "March 7, 1952",
+            "nationality" : "West Indies",
+            "batting_style" : "Right Handed",
+            "bowling_style" : "Right-arm medium",
+            "test_career_span" : "1974 - 1991",
+            "odi_career_span" : "1975 - 1991"
+        },
         "details": {
             "away": {
                 "innings": 51,
@@ -88,51 +53,122 @@
         }
     },
     {
-        "player_name": "Sir Don Bradman",
+        "player_name": "Allan Robert Bonder",
+        "player_Id": "5",
+        "info" : {
+            "dob" : "July 27, 1955",
+            "nationality" : "Australia",
+            "batting_style" : "Left Handed",
+            "bowling_style" : "Slow left-arm orthodox",
+            "test_career_span" : "1978 - 1994",
+            "odi_career_span" : "1979 - 1994"
+        },
         "details": {
             "away": {
-                "innings": 9,
-                "overs": 20,
-                "maiden_overs": 3,
-                "runs_conceded": 72,
-                "wickets": 2,
-                "Best": "1/8 v WI",
-                "3w": 0,
-                "5w": 0,
-                "avg": 36,
-                "economy_rate": 2.7,
-                "strike_rate": 80
+                "innings": 48,
+                "overs": 338,
+                "maiden_overs": 110,
+                "runs_conceded": 756,
+                "wickets": 20,
+                "Best": "5/68 v WI",
+                "3w": 1,
+                "5w": 1,
+                "avg": 37.8,
+                "economy_rate": 2.23,
+                "strike_rate": 101.4
             },
             "home": {
-                "innings": 9,
-                "overs": 20,
-                "maiden_overs": 3,
-                "runs_conceded": 72,
-                "wickets": 2,
-                "Best": "1/8 v WI",
+                "innings": 50,
+                "overs": 247.5,
+                "maiden_overs": 87,
+                "runs_conceded": 769,
+                "wickets": 19,
+                "Best": "7/46 v WI",
                 "3w": 0,
-                "5w": 0,
-                "avg": 36,
-                "economy_rate": 2.7,
-                "strike_rate": 80
+                "5w": 1,
+                "avg": 40.47,
+                "economy_rate": 2.32,
+                "strike_rate": 104.26
             },
             "total": {
-                "innings": 9,
-                "overs": 20,
-                "maiden_overs": 3,
-                "runs_conceded": 72,
-                "wickets": 2,
-                "Best": "1/8 v WI",
+                "innings": 98,
+                "overs": 585.5,
+                "maiden_overs": 197,
+                "runs_conceded": 1525,
+                "wickets": 39,
+                "Best": "7/7 v WI",
+                "3w": 1,
+                "5w": 2,
+                "avg": 39.14,
+                "economy_rate": 2.28,
+                "strike_rate": 102.83
+            }
+        }
+    },
+    {
+        "player_name": "Sachin Tendulkar",
+        "player_Id": "1",
+        "info" : {
+            "dob" : "April 24, 1973",
+            "nationality" : "India",
+            "batting_style" : "Right Handed",
+            "bowling_style" : "Off Break",
+            "test_career_span" : "1989 - 2013",
+            "odi_career_span" : "1989 - 2012"
+        },
+        "details": {
+            "away": {
+                "innings": 78,
+                "overs": 371.2,
+                "maiden_overs": 37,
+                "runs_conceded": 1392,
+                "wickets": 30,
+                "Best": "2/7 v NZ",
                 "3w": 0,
                 "5w": 0,
-                "avg": 36,
-                "economy_rate": 2.7,
-                "strike_rate": 80
+                "avg": 46.4,
+                "economy_rate": 3.74,
+                "strike_rate": 74.26
+            },
+            "home": {
+                "innings": 67,
+                "overs": 335.2,
+                "maiden_overs": 46,
+                "runs_conceded": 1100,
+                "wickets": 16,
+                "Best": "3/10 v SA",
+                "3w": 2,
+                "5w": 0,
+                "avg": 68.75,
+                "economy_rate": 3.28,
+                "strike_rate": 125.75
+            },
+            "total": {
+                "innings": 145,
+                "overs": 706.4,
+                "maiden_overs": 83,
+                "runs_conceded": 2492,
+                "wickets": 46,
+                "Best": "3/3 v SA",
+                "3w": 2,
+                "5w": 0,
+                "avg": 57.58,
+                "economy_rate": 3.51,
+                "strike_rate": 100.01
             }
         }
     },
     {
         "player_name": "Gary Sobers",
+        "player_Id": "4",
+        "info" : {
+            "dob" : "July 28, 1936",
+            "nationality" : "West Indies",
+            "batting_style" : "Left Handed",
+            "bowling_style" : "Left-arm fast medium",
+            "test_career_span" : "1954 - 1974",
+            "odi_career_span" : "1973"
+        },
         "details": {
             "away": {
                 "innings": 83,
@@ -176,46 +212,55 @@
         }
     },
     {
-        "player_name": "Allan Robert Bonder",
+        "player_name": "Sir Don Bradman",
+        "player_Id": "3",
+        "info" : {
+            "dob" : "Aug 27, 1908",
+            "nationality" : "Australia",
+            "batting_style" : "Right Handed",
+            "bowling_style" : "Right-arm legbreak",
+            "test_career_span" : "1928 - 1948",
+            "odi_career_span" : "-"
+        },
         "details": {
             "away": {
-                "innings": 48,
-                "overs": 338,
-                "maiden_overs": 110,
-                "runs_conceded": 756,
-                "wickets": 20,
-                "Best": "5/68 v WI",
-                "3w": 1,
-                "5w": 1,
-                "avg": 37.8,
-                "economy_rate": 2.23,
-                "strike_rate": 101.4
+                "innings": 9,
+                "overs": 20,
+                "maiden_overs": 3,
+                "runs_conceded": 72,
+                "wickets": 2,
+                "Best": "1/8 v WI",
+                "3w": 0,
+                "5w": 0,
+                "avg": 36,
+                "economy_rate": 2.7,
+                "strike_rate": 80
             },
             "home": {
-                "innings": 50,
-                "overs": 247.5,
-                "maiden_overs": 87,
-                "runs_conceded": 769,
-                "wickets": 19,
-                "Best": "7/46 v WI",
+                "innings": 9,
+                "overs": 20,
+                "maiden_overs": 3,
+                "runs_conceded": 72,
+                "wickets": 2,
+                "Best": "1/8 v WI",
                 "3w": 0,
-                "5w": 1,
-                "avg": 40.47,
-                "economy_rate": 2.32,
-                "strike_rate": 104.26
+                "5w": 0,
+                "avg": 36,
+                "economy_rate": 2.7,
+                "strike_rate": 80
             },
             "total": {
-                "innings": 98,
-                "overs": 585.5,
-                "maiden_overs": 197,
-                "runs_conceded": 1525,
-                "wickets": 39,
-                "Best": "7/7 v WI",
-                "3w": 1,
-                "5w": 2,
-                "avg": 39.14,
-                "economy_rate": 2.28,
-                "strike_rate": 102.83
+                "innings": 9,
+                "overs": 20,
+                "maiden_overs": 3,
+                "runs_conceded": 72,
+                "wickets": 2,
+                "Best": "1/8 v WI",
+                "3w": 0,
+                "5w": 0,
+                "avg": 36,
+                "economy_rate": 2.7,
+                "strike_rate": 80
             }
         }
     }
