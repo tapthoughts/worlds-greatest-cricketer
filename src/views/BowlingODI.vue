@@ -12,7 +12,7 @@
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            winner="both Sir Viv Richards & Sachin Tendulkar"
+            winner="both Michael Bevan & Sachin Tendulkar"
             titleText="having high strike rate"
             />
             <br/>
@@ -21,7 +21,7 @@
               title="Strike Rate"
               width="200"
               trigger="hover"
-              content="Bowling strike rate is a measure of how frequently a 
+              content="Bowling strike rate is a measure of how frequently a  
                        bowler achieves the primary goal of bowling, namely taking wickets ">
               <el-button slot="reference">Define Strike rate</el-button>
             </el-popover>
@@ -38,64 +38,94 @@
             />
             <Inference
             inference="Though score of Ricky Ponting looks better but he bowled in only 25 overs
-                       & others bowled in atleast 300 overs. Neglecting him, 
-                       Sachin Tendulkar and Michael Bevan both wins"
-            winner="Sachin Tendulkar & Michael Bevan"
+                       & others bowled in atleast 300 overs."
+            winner="Sir Viv Richards"
             titleText="average runs conceded"
             />
+            <br>
+            <el-popover
+              placement="top-start"
+              title="Economy rate"
+              width="200"
+              trigger="hover"
+              content="Economy rate is the average number of runs conceded per over  
+                      in cricket. The calculation is (Econ = Runs/Overs bowled).">
+              <el-button slot="reference">Define Economy rate</el-button>
+            </el-popover>
       </div>
 
       <div class="card">
             <Chart
             titleText="Average Maiden Overs"
-            subTitleText="Most number of Man of the Match Awards determine your winning contribution"
+            subTitleText="Bowling a maiden over in ODI is very important and difficult."
             chartType="bar"
             :chartData="MaidenOverData.data"
             :chartOptions="MaidenOverData.options"
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Sachin Tendulkar has the higher percentage of winning contribution than the rest."
-            winner="Sachin Tendulkar"
-            titleText="being winning contributor maximum times"
+            winner="Sir Viv Richards & Sachin Tendulkar"
+            titleText="bowling maiden overs maximum times"
             />
+            <br>
+            <el-popover
+              placement="top-start"
+              title="Maiden over"
+              width="200"
+              trigger="hover"
+              content="A maiden over is one in which no  runs are scored.">
+              <el-button slot="reference">Define Maiden over</el-button>
+            </el-popover>
         </div>
 
         <div class="card">
             <Chart
-            titleText="Awesomeness Rate"
-            subTitleText="Number of wickets taken for runs conceded in all matches"
+            titleText="Bowling Average"
+            subTitleText="Lower the bowling average is, the better the bowler is performing"
             chartType="bar"
             :chartData="WicketsRunsConcededData.data"
             :chartOptions="WicketsRunsConcededData.options"
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Though score of Ricky Ponting looks better but he bowled in only 25 overs
-                       & others bowled in atleast 300 overs. Neglecting him, 
-                       Sachin Tendulkar and Michael Bevan both wins"
             winner="Sachin Tendulkar & Michael Bevan"
-            titleText="average runs conceded"
+            titleText="bowling average"
             />
+            <br>
+            <el-popover
+              placement="top-start"
+              title="Bowling Average"
+              width="200"
+              trigger="hover"
+              content=" Number of wickets taken for runs  conceded in all matches.">
+              <el-button slot="reference">Define Bowling Average</el-button>
+            </el-popover>
       </div>
 
       <div class="card">
             <Chart
             titleText="Catches Taken"
-            subTitleText="Lesser number of runs conceded symbolizes a good bowler"
+            subTitleText="More catches taken symbolizes a good fielder"
             chartType="bar"
             :chartData="CatchesTakenData.data"
             :chartOptions="CatchesTakenData.options"
             :parentStyle="chartContainerStyle"
             />
             <Inference
-            inference="Though score of Ricky Ponting looks better but he bowled in only 25 overs
-                       & others bowled in atleast 300 overs. Neglecting him, 
-                       Sachin Tendulkar and Michael Bevan both wins"
-            winner="Sachin Tendulkar & Michael Bevan"
-            titleText="average runs conceded"
+            winner="Sachin Tendulkar & Ricky Ponting"
+            titleText="catches taken"
             />
       </div>
+
+      <div class="card center">
+          <h1>The ODI verdict - Bowling</h1>
+          <span class="result"> Sachin Tendulkar Wins !! </span>
+          <span class="result-ps"> 
+            Maximum number of wins in individual components is neutral.
+            <br>
+            But, Sachin Tendulkar is second in all factors & hence the winner.
+          </span>
+        </div>
 
   </div>
 </template>
@@ -444,5 +474,7 @@ export default {
 </script>
 
 <style>
-
+.center {
+  text-align: center;
+}
 </style>
