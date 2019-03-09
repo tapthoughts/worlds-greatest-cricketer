@@ -21,6 +21,7 @@
           Average runs, Runs at Home VS Away matches & ICC Ranking 
         </el-tag>
         <div class="card">
+            <PlayerDetailsCard :person="focusedPlayerBattingTest" />
             <Chart
             titleText="Average Runs Scored"
             subTitleText="A good average score of all matches is what makes a player dependable"
@@ -185,6 +186,7 @@
 <script>
 import Chart from '@/components/Chart.vue';
 import Inference from '@/components/Inference.vue';
+import PlayerDetailsCard from '@/components/PlayerDetailsCard.vue';
 
 import locationBatTest from '../../json/locationbattingTest.json';
 
@@ -193,6 +195,7 @@ export default {
   components: {
     Chart,
     Inference,
+    PlayerDetailsCard,
   },
   data() {
     return {
@@ -217,6 +220,11 @@ export default {
               barThickness: 50,
             }],
           },
+          onClick: (evt, item) => {
+            if (item && item[0] && item[0]._index != null) {
+              this.focusedPlayerBattingTest = locationBatTest[item[0]._index];
+            }
+          }
         },
         data: {
           labels: [],
@@ -314,6 +322,7 @@ export default {
           datasets: [],
         },
       },
+      focusedPlayerBattingTest: null
     };
   },
   mounted() {
