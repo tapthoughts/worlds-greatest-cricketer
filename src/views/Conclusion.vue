@@ -53,4 +53,8 @@ export default {
 .medium {
   font-size: 40px;
 }
+
+.center {
+  text-align: center;
+}
 </style>

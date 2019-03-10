@@ -10,6 +10,12 @@
             "test_career_span" : "1994 - 1998",
             "odi_career_span" : "1994 - 2004"
         },
+        "rank" : {
+            "a": 885,
+            "b": 707,
+            "c": 842,
+            "d": 784
+        },
         "details" : {
             "away" : {
                 "matches": 80,
@@ -78,6 +84,12 @@
     {
         "player_name" : "Sachin Tendulkar",
         "player_Id": "1",
+        "rank" : {
+            "a": 887,
+            "b": 804,
+            "c": 853,
+            "d": 750
+        },
         "info" : {
             "dob" : "April 24, 1973",
             "nationality" : "India",
@@ -154,6 +166,12 @@
     {
         "player_name" : "Sir Viv Richards",
         "player_Id": "2",
+        "rank" : {
+            "a": 935,
+            "b": 283,
+            "c": 754,
+            "d": 830
+        },
         "info" : {
             "dob" : "March 7, 1952",
             "nationality" : "West Indies",
@@ -230,6 +248,12 @@
     {
         "player_name" : "Ricky Ponting",
         "player_Id": "4",
+        "rank" : {
+            "a": 829,
+            "b": 673,
+            "c": 764,
+            "d": 734
+        },
         "info" : {
             "dob" : "December 19, 1974 ",
             "nationality" : "Australia",
@@ -306,6 +330,12 @@
     {
         "player_name" : "Brian Lara",
         "player_Id": "5",
+        "rank" : {
+            "a": 908,
+            "b": 893,
+            "c": 735,
+            "d": 719
+        },
         "info" : {
             "dob" : "May 2, 1969 ",
             "nationality" : "West Indies",

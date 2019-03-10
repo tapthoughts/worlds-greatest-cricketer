@@ -11,7 +11,7 @@
         </el-header>
         <el-main>
           <transition name="page" mode="out-in">
-            <router-view style="margin-top: 10px"></router-view>
+            <router-view></router-view>
           </transition>
         </el-main>
       </el-container>
@@ -20,8 +20,8 @@
 </template>
 
 <script>
-import Header from '@/components/Header';
-import Sidebar from '@/components/Sidebar';
+import Header from '@/components/Header.vue';
+import Sidebar from '@/components/Sidebar.vue';
 
 export default {
   components: {
