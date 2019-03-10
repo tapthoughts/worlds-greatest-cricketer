@@ -7,7 +7,7 @@
       <p class="card-text">
         Nationality: <span class="text-value">{{player.info.nationality}}</span>
         <br>
-        Batting Style: <span class="text-value">{{player.info.batting_style}}</span> 
+        Batting Style: <span class="text-value">{{player.info.batting_style}}</span>
         <br>
         Bowling Style: <span class="text-value">{{player.info.bowling_style}}</span>
         <br>
@@ -30,18 +30,18 @@ export default {
   props: ['person'],
   watch: {
     person: {
-      handler: function(newValue) {
+      handler(newValue) {
         this.player = newValue;
-        console.log(this.player)
-      }
-    }
+        console.log(this.player);
+      },
+    },
   },
   data() {
     return {
-      player: this.person
-    }
-  }
-}
+      player: this.person,
+    };
+  },
+};
 </script>
 
 <style scoped>

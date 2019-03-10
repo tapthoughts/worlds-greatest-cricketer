@@ -5,18 +5,18 @@
           <span class="title-imp">Important factors in ODI format</span>
           <hr>
           <br>
-          <span class="result-ps">1. <b>Strike Rate</b> plays an important role in the 
-            One Day format since it is equally important to score big runs as well 
+          <span class="result-ps">1. <b>Strike Rate</b> plays an important role in the
+            One Day format since it is equally important to score big runs as well
             score them fast
           </span>
-          <span class="result-ps">2. <b>Number of 6's and 4's</b> provide runs faster 
+          <span class="result-ps">2. <b>Number of 6's and 4's</b> provide runs faster
             compared to non-boundaries and hence are prefferable when you have to score fast
           </span>
         </div>
 
         <el-tag class="tags bottomtags">
-          <b>Consistency of Player:</b> 
-          Average runs, Runs at Home VS Away matches & ICC Ranking 
+          <b>Consistency of Player:</b>
+          Average runs, Runs at Home VS Away matches & ICC Ranking
         </el-tag>
         <div class="card">
             <PlayerDetailsCard :person="focusedPlayerBatting" />
@@ -168,10 +168,10 @@
         <div class="card center">
           <h1>The ODI verdict - Batting</h1>
           <span class="result"> Sachin Tendulkar Wins !! </span>
-          <span class="result-ps"> 
+          <span class="result-ps">
             Maximum number of wins in individual components is by Sachin Tendulkar.
             <br>
-            Also, he's the one to win in Strike rate and other important factors of 
+            Also, he's the one to win in Strike rate and other important factors of
             ODI batting.
           </span>
         </div>
@@ -220,7 +220,7 @@ export default {
             if (item && item[0] && item[0]._index != null) {
               this.focusedPlayerBatting = location_bat_odi[item[0]._index];
             }
-          }
+          },
         },
         data: {
           labels: [],
@@ -318,7 +318,7 @@ export default {
           datasets: [],
         },
       },
-      focusedPlayerBatting: null
+      focusedPlayerBatting: null,
     };
   },
   mounted() {

@@ -5,20 +5,20 @@
           <span class="title-imp">Important factors in Test format</span>
           <hr>
           <br>
-          <span class="result-ps">1. <b>Conversion 50's into 100's</b> plays an important role in the 
+          <span class="result-ps">1. <b>Conversion 50's into 100's</b> plays an important role in the
             Test cricket format since it is equally important to score big runs
           </span>
-          <span class="result-ps">2. <b>Conversion 100's into 200's</b> plays an crucial role in 
+          <span class="result-ps">2. <b>Conversion 100's into 200's</b> plays an crucial role in
             Test cricket format since a double century will give you a powerful win
           </span>
-          <span class="result-ps">3. <b>Number of 6's & 4's</b> provide runs faster 
+          <span class="result-ps">3. <b>Number of 6's & 4's</b> provide runs faster
             compared to non-boundaries & hence are prefferable when you have to score big
           </span>
         </div>
 
         <el-tag class="tags bottomtags">
-          <b>Consistency of Player:</b> 
-          Average runs, Runs at Home VS Away matches & ICC Ranking 
+          <b>Consistency of Player:</b>
+          Average runs, Runs at Home VS Away matches & ICC Ranking
         </el-tag>
         <div class="card">
             <PlayerDetailsCard :person="focusedPlayerBattingTest" />
@@ -63,21 +63,21 @@
               title="Away Score"
               width="200"
               trigger="hover"
-              content="Score of a player when he scores in the country in whose oppsition 
+              content="Score of a player when he scores in the country in whose oppsition
                         he's playing">
               <el-button slot="reference">Define Away Score</el-button>
             </el-popover>
         </div>
 
         <el-tag class="tags bottomtags">
-          <b>Player Dominance:</b> 
-          Conversion rate of 50s into 100s, 100s into 200s & Man of the Match Awards 
+          <b>Player Dominance:</b>
+          Conversion rate of 50s into 100s, 100s into 200s & Man of the Match Awards
         </el-tag>
 
         <div class="card">
             <Chart
             titleText="Conversion of 50s to 100s"
-            subTitleText="Let's find ability of a player to play big knocks and provide the 
+            subTitleText="Let's find ability of a player to play big knocks and provide the
                           team with the winning runs"
             chartType="horizontalBar"
             :chartData="ConversionToCenturyData.data"
@@ -111,7 +111,7 @@
         <div class="card">
             <Chart
             titleText="Man of the Match Awards"
-            subTitleText="Most number of Man of the Match Awards determine your 
+            subTitleText="Most number of Man of the Match Awards determine your
                           winning contribution"
             chartType="horizontalBar"
             :chartData="MomData.data"
@@ -125,7 +125,7 @@
         </div>
 
         <el-tag class="tags bottomtags">
-          <b>Hitting Strength:</b> Strike Rate, Number of Boundaries 
+          <b>Hitting Strength:</b> Strike Rate, Number of Boundaries
         </el-tag>
 
         <div class="card">
@@ -172,10 +172,10 @@
         <div class="card center">
           <h1>The Test verdict - Batting</h1>
           <span class="result"> Sachin Tendulkar Wins !! </span>
-          <span class="result-ps"> 
+          <span class="result-ps">
             Maximum number of wins in individual components is by Sachin Tendulkar.
             <br>
-            Also, he's the one to win in all important factors of 
+            Also, he's the one to win in all important factors of
             Test cricket batting.
           </span>
         </div>
@@ -224,7 +224,7 @@ export default {
             if (item && item[0] && item[0]._index != null) {
               this.focusedPlayerBattingTest = locationBatTest[item[0]._index];
             }
-          }
+          },
         },
         data: {
           labels: [],
@@ -322,7 +322,7 @@ export default {
           datasets: [],
         },
       },
-      focusedPlayerBattingTest: null
+      focusedPlayerBattingTest: null,
     };
   },
   mounted() {

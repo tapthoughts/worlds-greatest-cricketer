@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="card intro-card">
-      <span class="big">Hi. 
+      <span class="big">Hi.
         <span class="medium"> Let's find out </span>
       </span>
       <blockquote>
@@ -12,11 +12,11 @@
     </div>
     <div class="card">
       <p class="instruction">
-        Here, I'hv taken list of top 5 players from 
-        <a href="https://en.wikipedia.org/wiki/Wisden_100#Top_5_Test_batsmen">Wisden 100</a> 
+        Here, I'hv taken list of top 5 players from
+        <a href="https://en.wikipedia.org/wiki/Wisden_100#Top_5_Test_batsmen">Wisden 100</a>
         both ODI & Test,
         <br>
-        then I'll compare them on basis of three aspects, namely 
+        then I'll compare them on basis of three aspects, namely
         <br>
         <ul>
           <li>Consistency of Player</li>

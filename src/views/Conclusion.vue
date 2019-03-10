@@ -1,7 +1,7 @@
 <template>
   <div class="conclusion">
     <div class="card">
-      <Sunburst 
+      <Sunburst
         titleText="Overall Performance"
         subTitleText="Let's see overall performance of all players before our final conclusion"
       />
@@ -20,11 +20,11 @@
       <div class="card center">
           <h1 class="medium">Conclusion</h1>
           <span class="result large"> Sachin Tendulkar Wins !! </span>
-          <span class="result "> 
+          <span class="result ">
             By winning the battle in batting areas of both ODI and Test cricket
             <br>
-            as well as bowling in ODI, he proves the statement by 
-            <a href="https://en.wikipedia.org/wiki/Sachin_Tendulkar"> wikipedia</a> 
+            as well as bowling in ODI, he proves the statement by
+            <a href="https://en.wikipedia.org/wiki/Sachin_Tendulkar"> wikipedia</a>
             <br>
             He can truly be regarded as one of the world's greatest cricketer.
           </span>
@@ -37,7 +37,7 @@ import Sunburst from '@/components/Sunburst.vue';
 
 export default {
   name: 'conclusion',
-  components: { Sunburst }
+  components: { Sunburst },
 };
 </script>
 

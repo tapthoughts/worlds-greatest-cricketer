@@ -21,7 +21,7 @@
               title="Strike Rate"
               width="200"
               trigger="hover"
-              content="Bowling strike rate is a measure of how frequently a  
+              content="Bowling strike rate is a measure of how frequently a
                        bowler achieves the primary goal of bowling, namely taking wickets ">
               <el-button slot="reference">Define Strike rate</el-button>
             </el-popover>
@@ -48,7 +48,7 @@
               title="Economy rate"
               width="200"
               trigger="hover"
-              content="Economy rate is the average number of runs conceded per over  
+              content="Economy rate is the average number of runs conceded per over
                       in cricket. The calculation is (Econ = Runs/Overs bowled).">
               <el-button slot="reference">Define Economy rate</el-button>
             </el-popover>
@@ -120,7 +120,7 @@
       <div class="card center">
           <h1>The ODI verdict - Bowling</h1>
           <span class="result"> Sachin Tendulkar Wins !! </span>
-          <span class="result-ps"> 
+          <span class="result-ps">
             Maximum number of wins in individual components is neutral.
             <br>
             But, Sachin Tendulkar is second in all factors & hence the winner.
@@ -143,7 +143,7 @@ export default {
   components: {
     Chart,
     Inference,
-    PlayerDetailsCard
+    PlayerDetailsCard,
   },
   data() {
     return {
@@ -181,7 +181,7 @@ export default {
             if (item && item[0] && item[0]._index != null) {
               this.focusedPlayer = locationBowlingODI[item[0]._index];
             }
-          }
+          },
         },
         data: {
           labels: [],
@@ -241,8 +241,8 @@ export default {
           datasets: [],
         },
       },
-      focusedPlayer: null
-    }
+      focusedPlayer: null,
+    };
   },
   mounted() {
     const economyRateData = [];
@@ -339,7 +339,7 @@ export default {
     Object.values(locationBowlingODI).forEach((player) => {
       maidenOverData.push({
         name: player.player_name,
-        maiden_overs: (player.details.total.maiden_overs / player.details.total.overs)*100,
+        maiden_overs: (player.details.total.maiden_overs / player.details.total.overs) * 100,
       });
     });
     maidenOverData.sort((t1, t2) => t2.maiden_overs - t1.maiden_overs);
@@ -384,7 +384,7 @@ export default {
     Object.values(locationBowlingODI).forEach((player) => {
       wicketsRunsConcededData.push({
         name: player.player_name,
-        wickets: (player.details.total.wickets / player.details.total.runs_conceded)*100,
+        wickets: (player.details.total.wickets / player.details.total.runs_conceded) * 100,
       });
     });
     wicketsRunsConcededData.sort((t1, t2) => t1.wickets - t2.wickets);

@@ -5,7 +5,7 @@
             class="el-menu-vertical-demo"
             @open="handleOpen"
             @close="handleClose"
-            background-color="#545c64"
+            background-color="#434A50"
             text-color="#fff"
             active-text-color="#ffd04b">
             <el-menu-item @click="routeHome()" index="1">
@@ -37,12 +37,12 @@
 <script>
 export default {
   methods: {
-    // handleOpen(key, keyPath) {
-    //   console.log(key, keyPath);
-    // },
-    // handleClose(key, keyPath) {
-    //   console.log(key, keyPath);
-    // },
+    handleOpen(key, keyPath) {
+      console.log(key, keyPath);
+    },
+    handleClose(key, keyPath) {
+      console.log(key, keyPath);
+    },
     // route methods
     routeHome() {
       this.$router.push({ path: '/' });
