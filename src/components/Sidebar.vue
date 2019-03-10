@@ -70,10 +70,4 @@ export default {
 .el-menu {
   border-right: 0 !important;
 }
-
-/* .el-menu-vertical-demo:not(.el-menu--collapse) {
-    width: 225px;
-    min-height: 400px;
-  } */
-
 </style>

@@ -14,7 +14,7 @@
       <p class="instruction">
         Here, I'hv taken list of top 5 players from
         <a href="https://en.wikipedia.org/wiki/Wisden_100#Top_5_Test_batsmen">Wisden 100</a>
-        both ODI & Test,
+        for both ODI & Test,
         <br>
         then I'll compare them on basis of three aspects, namely
         <br>
@@ -24,7 +24,7 @@
           <li>Winning Contribution</li>
         </ul>
         <br>
-        Head over to Visualization :)
+        Please, head over to Visualization :)
       </p>
     </div>
   </div>
@@ -74,7 +74,7 @@ export default {
 
 .instruction {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 28px;
   margin-top: 70px;
   /* font-family: 'inconsolata'; */
 }

@@ -1,4 +1,11 @@
-# worlds-greatest-cricketer
+# Worlds Greatest Cricketer
+Finding world's greatest cricketer by comparing top 5 batsmen of ODI and Test cricket
+ given by [Wisden-100](https://en.wikipedia.org/wiki/Wisden_100#Top_5_Test_batsmen) list.
+ 
+
+
+## ******
+
 
 ## Project setup
 ```
