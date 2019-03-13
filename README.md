@@ -13,7 +13,7 @@ npm run serve
 ```
 ## ***Project Overview:***
 We are juding each player's performance in batting and bowling of both Test and ODI format of cricket.
-Thus, all visualizations are segregated accordingly.  Each chart has a winner of that particular 
+Thus, all visualizations are segregated accordingly. Each chart has a winner of that particular 
 factor. The player who wins in important factors and having most number of wins will be the winner.
 
 ## ***Objective:***
@@ -33,7 +33,7 @@ It provided me features like virtual DOM, client side routing, data-binding and 
 
 - <b>ChartJS</b>: <br/> 
 It is a JavaScript library that allows you to draw different types of charts by using the HTML5 canvas element. <br/>
-All my charts are really good looking cause of all this highly customisable library.
+All my charts are really good looking all because of this highly customisable library.
 
 - <b>vue-d2b</b>: <br/> 
 Vue extension for d2b data viz library, used Sunburst Chart from the same <br/>
@@ -46,8 +46,9 @@ Sunburst Chart is ideal for displaying hierarchical data. I used it to show over
 
 ## ***Bonus Points***
  * Developed using Vue, started project via vue-cli. Followed component architecture and other best practices.
- * Precalculated results from given data CSVs and directly using results via JSON files generated, it optimized loading times by a good extent.
+ * Precalculated results from given data CSVs and directly using results via JSON files generated, <br/> it optimized the loading time by a good extent.
  * Loading routes lazily at runtime.
+ * Project isn't responsive for now.
  * Implemented as PWA: 
     * Fully works offline
     * Javascript (which also contain our results json) and CSS chunks are cached after first load hence users can view visualizations with slow/no internet connectivity.
