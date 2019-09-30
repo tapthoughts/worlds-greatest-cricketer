@@ -12,7 +12,7 @@ npm run serve
 
 ```
 ## ***Project Overview:***
-We are juding each player's performance in batting and bowling of both Test and ODI format of cricket.
+We are juding each player's performance in batting and bowling, of both Test and ODI formats of cricket.
 Thus, all visualizations are segregated accordingly. Each chart has a winner of that particular 
 factor. The player who wins in important factors and having most number of wins will be the winner.
 
